@@ -37,7 +37,82 @@
         <h2 class="page-inner__title">Оставьте свой отзыв</h2>
         <p class="page-photo__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-
+      <div class="feddback">
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback__fullname">
+            <h2 class="feedback__title">Представьтесь:</h2>
+            <label for="name">Имя:</label>
+            <input class="feedback__fullname" id="name" type="text" name="name" placeholder="Петр">
+            <label for="surname">Фамилия:</label>
+            <input class="feedback__fullname" id="surname" type="text" name="surname" placeholder="Иванов">
+            <label for="patronymic">Отчество:</label>
+            <input class="feedback__fullname" id="patronymic" type="text" name="patronymic" placeholder="Алекандрович">
+          </div>
+          <div class="feedback__contacts">
+            <h2 class="feedback__title">Контактная информация:</h2>
+            <label for="phone">Контактный телефон:</label>
+            <input class="feedback__phone phone" id="phone" type="number" name="phone" placeholder="Введите телефон">
+            <label for="email">Электронная почта:</label>
+            <input class="feedback__email email" id="email" type="text" name="email" placeholder="Введите e-mail">
+          </div>
+          <div class="feedback__impression">
+            <h2 class="feedback__title">Ваще общее впечатление:</h2>
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <label class="feedback__radio">
+                  <input class="visually-hidden radio-indicator" type="radio" name="impression-group">
+                  Скорее положительное
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__radio">
+                  <input class="visually-hidden radio-indicator" type="radio" name="impression-group">
+                  Скорее отрицательное
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__radio">
+                  <input class="visually-hidden radio-indicator" type="radio" name="impression-group">
+                  Затрудняюсь ответить
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__attraction">
+            <h2 class="feedback__title">Посещенные достопримечательности:</h2>
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <label class="feedback__checkbox">
+                  <input class="visually-hidden checkbox-indicator" type="checkbox" name="devils-bridge">
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__checkbox">
+                  <input class="visually-hidden checkbox-indicator" type="checkbox" name="mountain-bell">
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__checkbox">
+                  <input class="visually-hidden checkbox-indicator" type="checkbox" name="slide-park">
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="feedback__item">
+                <label class="feedback__checkbox">
+                  <input class="visually-hidden checkbox-indicator" type="checkbox" name="red-rocks">
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="feedback__emotions">
+            <h2 class="feedback__title">Опишите свои эмоции:</h2>
+            <textarea name="comment" id="comment-field" rows="5">Опишите подроюнее все свои восторги</textarea>
+          </div>
+        </form>
+      </div>
 
     </main>
     <footer class="page-footer">
