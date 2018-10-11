@@ -9,7 +9,7 @@ $base-color: #81b3d2;
 .close {
   margin: 0;
   padding: 0;
-  background-color: #81b3d2;
+  background: $base-color;
   fill: #ffffff;
 }
 
@@ -23,10 +23,11 @@ $base-color: #81b3d2;
   margin: 0;
   padding: 0;
 }
+
 .site-nav__item {
   margin: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   font-size: 18px;
   line-height: 40px;
