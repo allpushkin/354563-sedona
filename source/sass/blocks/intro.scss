@@ -9,7 +9,17 @@
   background-repeat: no-repeat;
 }
 
-.intro__text {
+.back-inner {
+  height: 158px;
+  margin-bottom: 40px;
+
+  background-color: #748186;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.intro__heading {
   width: 267px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -25,5 +35,21 @@
   margin: 0 auto;
   padding: 0;
   line-height: 26px;
+  text-align: center;
+}
+
+.heading-2 {
+  margin: 0;
+  margin-bottom: 31px;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.intro__text {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  width: 270px;
   text-align: center;
 }
