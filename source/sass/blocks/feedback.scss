@@ -1,15 +1,20 @@
 .feedback {
+  width: 280px;
+  margin: 0 auto;
   margin-bottom: 51px;
 }
 
 .feedback-form__fullname {
-  width: 280px;
+  margin-bottom: 50px;
+
   font-size: 14px;
   line-height: 26px;
 }
 
 .feedback-form__heading-2 {
+  margin: 0;
   margin-bottom: 17px;
+
   font-size: 18px;
   line-height: 26px;
 
@@ -18,17 +23,35 @@
 
 .feedback-form__text {
   margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .input-field {
-
   padding: 13px 0;
   padding-left: 21px;
+  margin-bottom: 20px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
 
   background: #f2f2f2;
   border: none;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #000000;
+}
+
+.feedback-form__contacts {
+  margin-bottom: 49px;
+}
+
+.feedback-form__button {
+  padding: 15px 0px;
+
+  color: #e6e6e6;
+
+  border: none
 }
