@@ -52,6 +52,83 @@ input[type="number"]::placeholder {
   padding: 15px 0px;
 
   color: #e6e6e6;
-
   border: none
+}
+
+.feedback-form__impression {
+  margin-bottom: 53px;
+}
+
+.feedback-form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__item {
+  position: relative;
+  margin-left: 78px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.feedback-form__radio {
+  cursor: pointer;
+}
+
+.radio-indicator {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  width: 46px;
+  height: 46px;
+
+  background: #f2f2f2;
+
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 22px;
+  height: 22px;
+
+  background: #333333;
+
+  border-radius: 50%;
+}
+
+.feedback-form__attraction {
+  margin-bottom: 61px;
+}
+
+.feedback-form__checkbox {
+  cursor: pointer;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  width: 46px;
+  height: 46px;
+
+  background: #f2f2f2;
+
+  border-radius: 10%
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator {
+  content: "";
+  position: absolute;
+
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
