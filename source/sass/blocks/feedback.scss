@@ -1,0 +1,164 @@
+.feedback {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 51px;
+}
+
+.feedback-form__fullname {
+  margin-bottom: 50px;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.feedback-form__heading-2 {
+  margin: 0;
+  margin-bottom: 17px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  text-align: center;
+}
+
+.feedback-form__text {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  padding: 13px 0;
+  padding-left: 21px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  background: #f2f2f2;
+  border: none;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+  color: #000000;
+}
+
+.feedback-form__contacts {
+  margin-bottom: 49px;
+}
+
+.feedback-form__button {
+  padding: 15px 0px;
+
+  color: #e6e6e6;
+  border: none
+}
+
+.feedback-form__impression {
+  margin-bottom: 53px;
+}
+
+.feedback-form__list {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__item {
+  position: relative;
+  margin-left: 78px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: capitalize;
+  list-style: none;
+}
+
+.feedback-form__radio {
+  cursor: pointer;
+}
+
+.radio-indicator {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  width: 46px;
+  height: 46px;
+
+  background: #f2f2f2;
+
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 22px;
+  height: 22px;
+
+  background: #333333;
+
+  border-radius: 50%;
+}
+
+.feedback-form__attraction {
+  margin-bottom: 61px;
+}
+
+.feedback-form__checkbox {
+  cursor: pointer;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: -55px;
+  width: 46px;
+  height: 46px;
+
+  background: #f2f2f2;
+
+  border-radius: 10%
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator {
+  content: "";
+  position: absolute;
+
+  background-image: url("../img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+textarea {
+  width: 237px;
+  height: 160px;
+  margin-bottom: 51px;
+  padding: 22px 21px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.feedback-form__button--send {
+  width: 280px;
+  margin: 0 auto;
+  padding: 19px 21px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: #81b3d2;
+}

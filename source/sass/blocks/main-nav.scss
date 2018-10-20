@@ -1,0 +1,47 @@
+$base-color: #81b3d2;
+
+/*.main-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}*/
+
+.close {
+  margin: 0;
+  padding: 0;
+  background: $base-color;
+  fill: #ffffff;
+}
+
+.toggle svg {
+  margin: 0;
+  padding: 0;
+  fill: #81b3d2;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__item {
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: $base-color;
+
+  box-shadow: inset 0 0 1px rgba(0, 0, 100, 0.2);
+  box-shadow: 0 0 1px rgba(1, 1, 1, 0.2);
+}
+
+a {
+  color: #ffffff;
+}

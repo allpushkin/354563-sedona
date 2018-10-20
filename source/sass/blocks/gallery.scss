@@ -1,0 +1,46 @@
+.gallery__list {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__heading-3 {
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.gallery__text {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #333333;
+
+  text-transform: none;
+}
+
+.gallery__like {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+
+  background: #ffffff;
+  border: none;
+}
+
+.gallery__like--svg {
+  fill: #e1e1e1;
+}
+
+.gallery__like--click {
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
