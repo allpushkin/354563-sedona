@@ -17,7 +17,6 @@
 
   font-size: 18px;
   line-height: 26px;
-
   text-align: center;
 }
 
@@ -49,10 +48,10 @@ input[type="number"]::placeholder {
 }
 
 .feedback-form__button {
-  padding: 15px 0px;
+  padding: 15px 0;
 
   color: #e6e6e6;
-  border: none
+  border: none;
 }
 
 .feedback-form__impression {
@@ -121,7 +120,7 @@ input[type="radio"]:checked + .radio-indicator::after {
 
   background: #f2f2f2;
 
-  border-radius: 10%
+  border-radius: 10%;
 }
 
 input[type="checkbox"]:checked + .checkbox-indicator {
