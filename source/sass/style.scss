@@ -51,6 +51,8 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+@import "blocks/variables.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/features.scss";

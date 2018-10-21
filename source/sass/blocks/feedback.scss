@@ -34,7 +34,7 @@
   line-height: 26px;
   font-weight: 700;
 
-  background: #f2f2f2;
+    background-color: $bg-form;
   border: none;
 }
 
@@ -85,7 +85,7 @@ input[type="number"]::placeholder {
   width: 46px;
   height: 46px;
 
-  background: #f2f2f2;
+  background-color: $bg-form;
 
   border-radius: 50%;
 }
@@ -98,7 +98,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   width: 22px;
   height: 22px;
 
-  background: #333333;
+  background-color: #333333;
 
   border-radius: 50%;
 }
@@ -118,7 +118,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   width: 46px;
   height: 46px;
 
-  background: #f2f2f2;
+  background-color: $bg-form;
 
   border-radius: 10%;
 }
@@ -143,7 +143,7 @@ textarea {
   font-weight: 700;
   color: #000000;
 
-  background-color: #f2f2f2;
+  background-color: $bg-form;
   border: none;
 }
 
@@ -159,5 +159,5 @@ textarea {
   text-align: center;
   text-transform: uppercase;
 
-  background: #81b3d2;
+  background-color: $blue-color;
 }

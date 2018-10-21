@@ -1,5 +1,3 @@
-$base-color: #81b3d2;
-
 /*.main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -9,7 +7,7 @@ $base-color: #81b3d2;
 .close {
   margin: 0;
   padding: 0;
-  background: $base-color;
+  background: $blue-color;
   fill: #ffffff;
 }
 
@@ -36,9 +34,9 @@ $base-color: #81b3d2;
   text-align: center;
   text-transform: uppercase;
 
-  background: $base-color;
+  background: $blue-color;
 
-  box-shadow: inset 0 0 1px rgba(0, 0, 100, 0.2), 0 0 1px rgba(1, 1, 1, 0.2);
+  box-shadow: 0 0 1px rgba(1, 1, 1, 0.2), inset 0 0 1px rgba(0, 0, 100, 0.2);
 }
 
 a {
