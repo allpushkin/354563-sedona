@@ -15,6 +15,8 @@
 }
 
 .video__roller {
+  position: relative;
+  top: -52px;
   width: 280px;
   height: 45px;
   margin: 0 auto;
@@ -22,6 +24,9 @@
 }
 
 .video__scale {
+  position: absolute;
+  top: 22px;
+  left: 22px;
   width: 235px;
   height: 3px;
   margin: 0 auto;
@@ -29,6 +34,8 @@
 }
 
 .video__handle {
+  position: absolute;
+  top: 18px;
   width: 10px;
   height: 10px;
   margin-left: 57px;
@@ -38,6 +45,10 @@
 }
 
 .video__list {
+  position: relative;
+  top: -52px;
+
+  display:  flex;
   width: 280px;
   height: 66px;
   margin: 0 auto;
@@ -46,4 +57,22 @@
   background-color: #f2f2f2;
 
   list-style: none;
+}
+
+.controls__replays {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+}
+
+.controls__subtitles {
+  position: absolute;
+  top: 23px;
+  left: 172px;
+}
+
+.controls__fullscreen {
+  position: absolute;
+  top: 23px;
+  right: 23px;
 }

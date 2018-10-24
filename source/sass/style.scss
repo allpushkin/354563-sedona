@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
   height: auto;
   margin: 0 auto;
   padding: 0;
@@ -10,6 +10,11 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 a {
@@ -52,11 +57,13 @@ input[type="radio"].visually-hidden {
 }
 
 @import "blocks/variables.scss";
+@import "blocks/mixins.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/features.scss";
 @import "blocks/search.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/gallery.scss";
 @import "blocks/video.scss";

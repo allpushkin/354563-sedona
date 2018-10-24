@@ -34,24 +34,37 @@
   line-height: 26px;
   font-weight: 700;
 
-    background-color: $bg-form;
+  background-color: $bg-form;
   border: none;
 }
 
-input[type="text"]::placeholder,
-input[type="number"]::placeholder {
+input[type="text"]::placeholder {
   color: #000000;
 }
 
 .feedback-form__contacts {
+  position: relative;
   margin-bottom: 49px;
 }
 
 .feedback-form__button {
-  padding: 15px 0;
+  width: 51px;
+  height: 51px;
 
   color: #e6e6e6;
   border: none;
+}
+
+.feedback-form__button--phone {
+  position: absolute;
+  top: 65px;
+  right: 23px;
+}
+
+.feedback-form__button--email {
+  position: absolute;
+  bottom: 20px;
+  right: 23px;
 }
 
 .feedback-form__impression {
