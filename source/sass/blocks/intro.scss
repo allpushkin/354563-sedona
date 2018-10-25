@@ -19,6 +19,9 @@
   position: absolute;
   top: 90px;
   left: 20px;
+
+  width: 282px;
+  height: 214px;
 }
 
 .back__bg-triangle--mobile {
@@ -29,7 +32,7 @@
 
 .back__bg-triangle--tablet,
 .back__bg-triangle--desktop {
-  display: none
+  display: none;
 }
 
 .intro__features {
@@ -76,6 +79,9 @@
   position: absolute;
   top: 52px;
   left: 45px;
+
+  width: 229px;
+  height: 39px;
 }
 
 .back-inner__bg-triangle {
@@ -139,7 +145,7 @@
 
   .back__bg-triangle--mobile,
   .back__bg-triangle--desktop {
-    display: none
+    display: none;
   }
 
   .intro__features {
@@ -160,6 +166,64 @@
   .intro__text {
     width: 500px;
   }
+
+  //Стили для внутренних страниц планшета
+  .intro__back-inner {
+    position: relative;
+    width: auto;
+    height: 290px;
+    margin: 0 auto;
+  }
+
+  .back-inner {
+    width: 768px;
+    margin-bottom: 75px;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .back-inner__text-sedona {
+    position: absolute;
+    top: -20px;
+    left: 153px;
+
+    width: 460px;
+    height: 350px;
+  }
+
+  .back__bg-triangle--tablet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+  }
+
+  .back__bg-triangle--mobile,
+  .back__bg-triangle--desktop {
+    display: none;
+  }
+
+  .intro__features {
+    width: 100%;
+    margin-bottom: 51px;
+  }
+
+  .intro__heading-2 {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .intro__text {
+    width: 430px;
+    margin-bottom: 70px;
+  }
 }
 
 //Стили для ПК
@@ -176,9 +240,6 @@
     position: absolute;
     top: 77px;
     left: 357px;
-
-    width: 460px;
-    height: 350px;
   }
 
   .back__bg-triangle--desktop {
@@ -191,7 +252,61 @@
 
   .back__bg-triangle--mobile,
   .back__bg-triangle--tablet {
-    display: none
+    display: none;
   }
 
+  //Стили для внутренних страниц
+  .intro__back-inner {
+    position: relative;
+    width: auto;
+    height: 290px;
+    margin: 0 auto;
+  }
+
+  .back-inner {
+    width: 1200px;
+    margin-bottom: 75px;
+
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .back-inner__text-sedona {
+    position: absolute;
+    top: 0;
+    left: 357px;
+  }
+
+  .back__bg-triangle--desktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+  }
+
+  .back__bg-triangle--mobile,
+  .back__bg-triangle--tablet {
+    display: none;
+  }
+
+  .intro__features {
+    width: 100%;
+    margin-bottom: 51px;
+  }
+
+  .intro__heading-2 {
+    margin: 0 auto;
+    margin-bottom: 33px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .intro__text {
+    width: 430px;
+    margin-bottom: 70px;
+  }
 }

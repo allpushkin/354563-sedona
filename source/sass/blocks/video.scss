@@ -48,7 +48,7 @@
   position: relative;
   top: -52px;
 
-  display:  flex;
+  display: flex;
   width: 280px;
   height: 66px;
   margin: 0 auto;
@@ -75,4 +75,47 @@
   position: absolute;
   top: 23px;
   right: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    width: auto;
+
+    outline: 2px solid red;
+  }
+
+  .video__wrapper {
+    width: 648px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
+
+  .video__heading-2 {
+    margin-bottom: 34px;
+
+    font-size: 30px;
+  }
+
+  .video__text {
+    width: 440px;
+    margin-bottom: 75px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: auto;
+
+    outline: 2px solid red;
+  }
+
+  .video__wrapper {
+    width: 800px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
 }
