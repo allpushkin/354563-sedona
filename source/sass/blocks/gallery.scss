@@ -68,26 +68,36 @@
     outline: 2px solid yellow;
   }
 
-  /*.gallery__list {
+  .gallery__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
+    margin: 0;
+    padding: 0;
  }
 
- .gallery__item {
+  .gallery__item:first-child {
+    width: 100%;
+    height: 480px;
 
-   outline: 2px solid tomato;
- }
+    outline: 2px solid tomato;
+  }
 
- .gallery__photo {
+  .gallery__item {
+    width: 50%;
+    height: 347px;
 
-   width: 648px;
+    outline: 2px solid tomato;
+  }
 
+  .gallery__description {
+    width: 100%;
+    height: 80px;
 
-   outline: 2px solid orange;
- }
-*/
+    background-color: #f2f2f2;
+  }
+
 }
 
 //Стили для экрана ПК
