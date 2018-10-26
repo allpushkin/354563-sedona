@@ -2,14 +2,16 @@
   margin-bottom: 30px;
 }
 
+.features__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .features__list,
 .advantage__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 
   text-align: center;
-
-  list-style: none;
 }
 
 .features__main {
@@ -17,7 +19,12 @@
 
   color: #ffffff;
 
-  background-color: $base-color;
+  background-color: $blue-color;
+}
+
+.features__main-images--tablet,
+.features__main-images--desktop {
+  display: none;
 }
 
 .features__main-intro {
@@ -35,6 +42,7 @@
 
 .features__heading-3 {
   padding-top: 55px;
+  margin: 0;
   margin-bottom: 10px;
 }
 
@@ -49,31 +57,48 @@
 }
 
 .features__item-images {
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 .advantage__item {
+  position: relative;
   height: 135px;
   padding-top: 35px;
 }
 
-.advantage__item--lodging {
-  background-image: url("../img/icon-house.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
+.icon__lodging {
+  position: absolute;
+  top: 25px;
+  left: 21px;
+
+  width: 39px;
+  height: 37px;
+
+  fill: $blue-color;
 }
 
-.advantage__item--suvenirs {
-  background-image: url("../img/icon-gift.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
+.icon__suvenirs {
+  position: absolute;
+  top: 25px;
+  left: 21px;
+
+  width: 39px;
+  height: 37px;
+
+  fill: $blue-color;
 }
 
-.advantage__item--food {
-  background-image: url("../img/icon-burger.svg");
-  background-position: top left;
-  background-repeat: no-repeat;
+.icon__food {
+  position: absolute;
+  top: 25px;
+  left: 21px;
+
+  width: 39px;
+  height: 37px;
+
+  fill: $blue-color;
 }
 
 .advantage__heading-3 {
@@ -95,5 +120,306 @@
   margin: 0;
   padding: 0;
 
-  background-color: #eeeeee;
+  background-color: $bg-grey;
+}
+
+.heading-3__rest {
+  padding-top: 29px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.features__description-rest {
+  width: 247px;
+  margin: 0 auto;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .features {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 57px;
+  }
+
+  .features__wrapper {
+    width: 768px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features__main {
+    display: flex;
+
+    width: 768px;
+    height: 256px;
+  }
+
+  .features__main-intro {
+    width: 256px;
+  }
+
+  .features__heading-3 {
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 56px;
+
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .features__description {
+    width: 170px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .features__main-images--tablet {
+    display: block;
+    width: 512px;
+    height: 256px;
+  }
+
+  .features__main-images--mobile,
+  .features__main-images--desktop {
+    display: none;
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantage__item {
+    position: relative;
+
+    width: 256px;
+    height: 166px;
+    margin-top: 164px;
+  }
+
+  .advantage__heading-3 {
+    margin: 0;
+    margin-bottom: 26px;
+    padding: 0;
+
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .advantage__text {
+    width: 170px;
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .icon__lodging {
+    position: absolute;
+    top: -64px;
+    left: 90px;
+
+    width: 75px;
+    height: 72px;
+
+    fill: $blue-color;
+  }
+
+  .icon__suvenirs {
+    position: absolute;
+    top: -64px;
+    left: 90px;
+
+    width: 64px;
+    height: 75px;
+
+    fill: $blue-color;
+  }
+
+  .icon__food {
+    position: absolute;
+    top: -66px;
+    left: 90px;
+
+    width: 77px;
+    height: 68px;
+
+    fill: $blue-color;
+  }
+
+  .features__item--rest {
+    width: 256px;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .features__item--wrap {
+    width: 166px;
+    margin: 0 auto;
+  }
+
+  .heading-3__rest {
+    width: 105px;
+    padding-top: 50px;
+  }
+
+  .features__description-rest {
+    width: 165px;
+    margin-bottom: 56px;
+  }
+}
+
+//Стили для ПК
+@media (min-width: $desktop-width) {
+  .features__wrapper {
+    width: 1200px;
+    min-height: 256px;
+    margin-bottom: 57px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features__main {
+    display: flex;
+
+    width: 1200px;
+    height: 256px;
+  }
+
+  .features__main-intro {
+    width: 400px;
+    height: 256px;
+  }
+
+  .features__heading-3 {
+    width: 170px;
+    margin: 0 auto;
+    padding-top: 56px;
+
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .features__description {
+    width: 170px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .features__main-images--desktop {
+    display: block;
+    width: 800px;
+    height: 256px;
+    overflow: hidden;
+  }
+
+  .features__main-images--mobile,
+  .features__main-images--tablet {
+    display: none;
+  }
+
+  .advantage__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantage__item {
+    position: relative;
+
+    width: 400px;
+    height: 166px;
+    margin-top: 162px;
+  }
+
+  .advantage__heading-3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 26px;
+
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .advantage__text {
+    width: 270px;
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .icon__lodging {
+    position: absolute;
+    top: -64px;
+    left: 161px;
+
+    width: 75px;
+    height: 72px;
+
+    fill: $blue-color;
+  }
+
+  .icon__suvenirs {
+    position: absolute;
+    top: -64px;
+    left: 161px;
+
+    width: 64px;
+    height: 75px;
+
+    fill: $blue-color;
+  }
+
+  .icon__food {
+    position: absolute;
+    top: -66px;
+    left: 161px;
+
+    width: 77px;
+    height: 68px;
+
+    fill: $blue-color;
+  }
+
+  .features__item--rest {
+    width: 400px;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .features__item--wrap {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .heading-3__rest {
+    width: 105px;
+    padding-top: 50px;
+  }
+
+  .features__description-rest {
+    width: 314px;
+    margin: 0 auto;
+  }
 }

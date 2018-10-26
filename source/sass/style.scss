@@ -1,5 +1,19 @@
+@font-face {
+  font-weight: 400;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("font/ptSans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("font/ptSansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
+}
+
 body {
-  width: 320px;
+  min-width: 320px;
   height: auto;
   margin: 0 auto;
   padding: 0;
@@ -10,6 +24,11 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 a {
@@ -51,10 +70,14 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+@import "blocks/variables.scss";
+@import "blocks/mixins.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
 @import "blocks/features.scss";
 @import "blocks/search.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/gallery.scss";
 @import "blocks/video.scss";

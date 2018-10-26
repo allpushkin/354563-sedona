@@ -1,0 +1,87 @@
+.map {
+  position: relative;
+  height: 350px;
+}
+
+.map__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.map iframe {
+  position: absolute;
+  border: none;
+  z-index: 2;
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.map__marker {
+  position: absolute;
+  top: 45%;
+  right: 45%;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .map {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .map__wrapper {
+    width: 768px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
+
+  .map iframe {
+    position: absolute;
+    border: none;
+    z-index: 2;
+  }
+
+  .map__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .map__marker {
+    position: absolute;
+    top: 45%;
+    right: 45%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
+
+  .map iframe {
+    position: absolute;
+    border: none;
+    z-index: 2;
+  }
+
+  .map__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .map__marker {
+    position: absolute;
+    top: 45%;
+    right: 45%;
+  }
+}

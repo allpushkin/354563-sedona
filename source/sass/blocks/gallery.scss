@@ -1,9 +1,10 @@
-.gallery__list {
+.gallery__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding: 0;
+}
 
-  list-style: none;
+.gallery__list {
+  @include reset-list;
 }
 
 .gallery__heading-3 {
@@ -24,6 +25,10 @@
 }
 
 .gallery__like {
+  display: flex;
+}
+
+.gallery__like--image {
   margin: 0;
   margin-bottom: 20px;
 
@@ -41,7 +46,71 @@
 
 .gallery__like--click {
   margin: 0;
-  margin-left: 40px;
+  margin-left: 10px;
   margin-bottom: 20px;
+  padding-top: 5px;
   font-weight: 700;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .gallery {
+    width: auto;
+    margin-bottom: 67px;
+
+    outline: 2px solid red;
+  }
+
+  .gallery__wrapper {
+    width: 648px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery__item:first-child {
+    width: 100%;
+    height: 480px;
+
+    outline: 2px solid tomato;
+  }
+
+  .gallery__item {
+    width: 50%;
+    height: 347px;
+
+    outline: 2px solid tomato;
+  }
+
+  .gallery__description {
+    width: 100%;
+    height: 80px;
+
+    background-color: #f2f2f2;
+  }
+}
+
+//Стили для экрана ПК
+@media (min-width: $desktop-width) {
+  .gallery {
+    margin-bottom: 71px;
+
+    outline: 2px solid red;
+  }
+
+  .gallery__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
 }

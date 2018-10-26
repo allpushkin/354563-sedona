@@ -34,24 +34,37 @@
   line-height: 26px;
   font-weight: 700;
 
-  background: #f2f2f2;
+  background-color: $bg-form;
   border: none;
 }
 
-input[type="text"]::placeholder,
-input[type="number"]::placeholder {
+input[type="text"]::placeholder {
   color: #000000;
 }
 
 .feedback-form__contacts {
+  position: relative;
   margin-bottom: 49px;
 }
 
 .feedback-form__button {
-  padding: 15px 0;
+  width: 51px;
+  height: 51px;
 
   color: #e6e6e6;
   border: none;
+}
+
+.feedback-form__button--phone {
+  position: absolute;
+  top: 65px;
+  right: 23px;
+}
+
+.feedback-form__button--email {
+  position: absolute;
+  bottom: 20px;
+  right: 23px;
 }
 
 .feedback-form__impression {
@@ -85,7 +98,7 @@ input[type="number"]::placeholder {
   width: 46px;
   height: 46px;
 
-  background: #f2f2f2;
+  background-color: $bg-form;
 
   border-radius: 50%;
 }
@@ -98,7 +111,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   width: 22px;
   height: 22px;
 
-  background: #333333;
+  background-color: #333333;
 
   border-radius: 50%;
 }
@@ -118,7 +131,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   width: 46px;
   height: 46px;
 
-  background: #f2f2f2;
+  background-color: $bg-form;
 
   border-radius: 10%;
 }
@@ -143,7 +156,7 @@ textarea {
   font-weight: 700;
   color: #000000;
 
-  background-color: #f2f2f2;
+  background-color: $bg-form;
   border: none;
 }
 
@@ -159,5 +172,117 @@ textarea {
   text-align: center;
   text-transform: uppercase;
 
-  background: #81b3d2;
+  background-color: $blue-color;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: auto;
+
+    outline: 2px solid red;
+  }
+
+  .feedback__wrapper {
+    width: 648px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
+
+  .feedback-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__impression {
+    width: 50%;
+    height: 295px;
+    margin-bottom: 80px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__fullname {
+    width: 50%;
+    height: 295px;
+    margin-bottom: 80px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__contacts {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 56px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__attraction {
+    width: 100%;
+    height: 235px;
+    margin-bottom: 76px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__emotions {
+    width: 100%;
+    height: 355px;
+
+    outline: 2px solid green;
+  }
+}
+
+//Стили для ПК
+@media (min-width: $desktop-width) {
+  .feedback {
+    width: auto;
+
+    outline: 2px solid red;
+  }
+
+  .feedback__wrapper {
+    width: 960px;
+    margin: 0 auto;
+
+    outline: 2px solid yellow;
+  }
+
+  .feedback-form__impression {
+    height: 240px;
+    margin-bottom: 71px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__fullname {
+    height: 240px;
+    margin-bottom: 71px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__contacts {
+    height: 155px;
+    margin-bottom: 56px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__attraction {
+    height: 145px;
+    margin-bottom: 74px;
+
+    outline: 2px solid green;
+  }
+
+  .feedback-form__emotions {
+    width: 100%;
+    height: 355px;
+
+    outline: 2px solid green;
+  }
 }

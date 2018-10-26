@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.search__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .search__heading {
   margin-bottom: 24px;
 
@@ -12,6 +17,8 @@
 
 .search__text {
   width: 280px;
+  margin: 0 auto;
+  margin-bottom: 38px;
 }
 
 .search__button {
@@ -22,5 +29,74 @@
   font-weight: 700;
   color: #ffffff;
 
-  background: $base-color;
+  background-color: $blue-color;
+}
+
+.search__button:hover {
+  background-color: #669ec0;
+}
+
+.search__button:active {
+  color: #818181;
+
+  background-color: #5496bd;
+}
+
+.search__button:disabled {
+  background-color: #e5e5e5;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .search {
+    witdh: auto;
+    margin: 0 auto;
+  }
+
+  .search__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .search__heading {
+    margin-bottom: 37px;
+
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  .search__text {
+    width: 439px;
+    margin-bottom: 44px;
+  }
+
+  .search__button {
+    margin-bottom: 58px;
+    padding: 17px 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search {
+    margin: 0 auto;
+  }
+
+  .search__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .search__heading {
+    margin-bottom: 33px;
+  }
+
+  .search__text {
+    width: 439px;
+    margin-bottom: 51px;
+  }
+
+  .search__button {
+    margin-bottom: 66px;
+    padding: 17px 135px;
+  }
 }
