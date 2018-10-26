@@ -59,20 +59,11 @@
               <path fill="#FFFFFF" d="M407.345,64.319l-5.16,13.002h-20.646l28.785-74.839h21.242l28.188,74.839h-20.745l-4.862-13.002H407.345z M420.945,25.609h-0.199l-8.039,23.824h16.178L420.945,25.609z"/>
             </g>
           </svg>
-          <svg class="back__bg-triangle--mobile"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
-            <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
-            <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
-          </svg>
-          <svg class="back__bg-triangle--tablet" xmlns="http://www.w3.org/2000/svg" width="768" height="57" viewBox="216.469 0 768 57">
-            <g fill="#FFF">
-              <path d="M249.566 23.71l-33.097-3.145V57h383.486L249.566 0zM950.346 23.71V0L599.955 57h384.514V20.468z"/>
-            </g>
-          </svg>
-          <svg class="back__bg-triangle--desktop" xmlns="http://www.w3.org/2000/svg" width="1200" height="57">
-            <g fill="#fff">
-              <path d="M250 24L0 0v57h600L250 0zM951 24V0L600 57h600V0z"/>
-            </g>
-          </svg>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="back__bg-triangle" src="img/bg-intro-triangle-mobile.svg">
+          </picture>
         </div>
         <h2 class="intro__heading-2 heading-2">Оставьте свой отзыв</h2>
         <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
