@@ -24,20 +24,14 @@
   height: 214px;
 }
 
-.back__bg-triangle--mobile {
+.back__bg-triangle {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
-.back__bg-triangle--tablet,
-.back__bg-triangle--desktop {
-  display: none;
-}
-
 .intro__features {
   position: relative;
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -135,19 +129,6 @@
     height: 350px;
   }
 
-  .back__bg-triangle--tablet {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-  }
-
-  .back__bg-triangle--mobile,
-  .back__bg-triangle--desktop {
-    display: none;
-  }
-
   .intro__features {
     width: 100%;
     margin-bottom: 51px;
@@ -193,24 +174,6 @@
     height: 350px;
   }
 
-  .back__bg-triangle--tablet {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-  }
-
-  .back__bg-triangle--mobile,
-  .back__bg-triangle--desktop {
-    display: none;
-  }
-
-  .intro__features {
-    width: 100%;
-    margin-bottom: 51px;
-  }
-
   .intro__heading-2 {
     margin: 0 auto;
     margin-bottom: 33px;
@@ -218,11 +181,6 @@
     font-size: 30px;
     line-height: 26px;
     text-align: center;
-  }
-
-  .intro__text {
-    width: 432px;
-    margin-bottom: 70px;
   }
 }
 
@@ -240,19 +198,6 @@
     position: absolute;
     top: 77px;
     left: 357px;
-  }
-
-  .back__bg-triangle--desktop {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-  }
-
-  .back__bg-triangle--mobile,
-  .back__bg-triangle--tablet {
-    display: none;
   }
 
   //Стили для внутренних страниц
@@ -276,24 +221,6 @@
     position: absolute;
     top: 0;
     left: 357px;
-  }
-
-  .back__bg-triangle--desktop {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    display: block;
-  }
-
-  .back__bg-triangle--mobile,
-  .back__bg-triangle--tablet {
-    display: none;
-  }
-
-  .intro__features {
-    width: 100%;
-    margin-bottom: 51px;
   }
 
   .intro__heading-2 {
