@@ -8,7 +8,9 @@
 }
 
 .search__heading {
-  margin-bottom: 24px;
+  display: block;
+
+  margin-bottom: 18px;
 
   font-size: 21px;
   line-height: 26px;
@@ -18,11 +20,13 @@
 .search__text {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 38px;
+  margin-bottom: 34px;
+
+  line-height: 24px;
 }
 
 .search__button {
-  margin-bottom: 49px;
+  margin-bottom: 48px;
   padding: 17px 46px;
   font-size: 21px;
   line-height: 26px;
@@ -59,15 +63,15 @@
   }
 
   .search__heading {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
 
     font-size: 30px;
     line-height: 26px;
   }
 
   .search__text {
-    width: 439px;
-    margin-bottom: 44px;
+    width: 396px;
+    margin-bottom: 40px;
   }
 
   .search__button {
@@ -76,6 +80,7 @@
   }
 }
 
+//Стили для экрана ПК
 @media (min-width: $desktop-width) {
   .search {
     margin: 0 auto;
@@ -87,12 +92,12 @@
   }
 
   .search__heading {
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .search__text {
-    width: 439px;
-    margin-bottom: 51px;
+    width: 396px;
+    margin-bottom: 46px;
   }
 
   .search__button {
