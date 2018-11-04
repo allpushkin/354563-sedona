@@ -260,7 +260,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   width: 237px;
   height: 130px;
   margin-top: 0;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   padding: 15px 21px;
 
   font-size: 18px;
@@ -280,8 +280,8 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   //padding-top: 15px;
   //padding-left: 21px;
 
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -345,27 +345,34 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   .feedback-form__fullname {
     order: 2;
 
-    display: flex;
-
     width: 50%;
-    height: 295px;
-    //margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .feedback-form__heading-2--fullname {
     margin-bottom: 58px;
+    margin-left: 58px;
+
+    text-align: left;
   }
 
   .feedback-form__container {
-    //max-height: 56px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    margin: 0;
+    padding: 0;
     margin-left: 58px;
-    margin-bottom: 78px;
   }
 
   .input-field {
-    padding-top: 29px;
+    margin: 0;
+    margin-bottom: 20px;
+    //padding-top: 29px;
     padding-left: 20px;
-    padding-bottom: 29px;
+    //padding-bottom: 29px;
+
   }
 
   .feedback-form__fullname::after {
@@ -481,8 +488,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
   .feedback-form__button--send {
     width: 324px;
-    padding-top: 3px;
-    padding-left: 25px;
+    margin: 0 auto;
   }
 
   .feedback-form__footnote {
@@ -522,19 +528,24 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__fullname {
-    height: 293px;
-    margin-bottom: 71px;
+    margin-bottom: 48px;
   }
 
   .feedback-form__heading-2--fullname {
     margin-bottom: 56px;
+    padding-left: 22px;
   }
 
   .feedback-form__container {
     display: flex;
     justify-content: space-between;
 
+    //height: 78px;
     margin-left: 79px;
+  }
+
+  .input-field {
+    flex-grow: 1;
   }
 
   .feedback-form__contacts {
@@ -644,11 +655,13 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
   .feedback-form__textarea--emotions {
     width: 918px;
+    margin-bottom: 50px;
   }
 
   .feedback-form__button--send {
     width: 480px;
-    padding-left: 32px;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .feedback-form__footnote {
