@@ -1,5 +1,6 @@
 .hashtag {
-  margin-top: 36px;
+  margin: 0;
+  padding-top: 36px;
 
   font-size: 21px;
   line-height: 26px;
@@ -70,7 +71,9 @@
 
 //Внутренние страницы
 .hashtag-inner {
-  margin: 23px;
+  //margin: 23px;
+  margin: 0;
+  padding-top: 23px;
 
   font-size: 21px;
   line-height: 26px;
@@ -78,6 +81,7 @@
   text-align: center;
 }
 
+//Стили для планшета
 @media (min-width: $tablet-width) {
   .page-footer {
     width: auto;
@@ -92,7 +96,7 @@
   }
 
   .hashtag {
-    margin-top: 45px;
+    margin-top: 9px;
   }
 
   .social {
@@ -131,16 +135,18 @@
     margin: 0;
     padding: 0;
   }
+
+  .hashtag-inner {
+    margin: 0;
+    padding-top: 46px;
+  }
 }
 
+//Стили для экрана ПК
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 960px;
     margin: 0 auto;
-  }
-
-  .hashtag {
-    margin-top: 45px;
   }
 
   .social {

@@ -3,8 +3,8 @@
 
   min-height: 390px;
   margin: 0 auto;
-  margin-top: 54px;
   margin-bottom: 40px;
+  //padding-top: 54px;
 }
 
 .back {
@@ -54,17 +54,6 @@
   left: 0;
 }
 
-.heading-2 {
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.intro__heading-2 {
-  margin: 0;
-  margin-bottom: 31px;
-}
-
 .intro__text {
   width: 280px;
   margin: 0 auto;
@@ -78,23 +67,17 @@
 .intro {
   width: 320px;
   margin: 0 auto;
-  //margin-bottom: 22px;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.back-inner__text-sedona {
-  position: absolute;
-  top: 50px;
-  left: 45px;
-
-  width: 229px;
-  height: 39px;
+.intro--photo {
+  margin-bottom: 19px;
+  padding-bottom: 26px;
 }
 
-.back-inner__bg-triangle {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
+.intro--form {
+  margin-bottom: 19px;
+  padding-bottom: 16px;
 }
 
 .intro__back-inner {
@@ -107,8 +90,7 @@
 .back-inner {
   position: relative;
   margin: 0 auto;
-  margin-top: 56px;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   background-color: $bg-grey;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -116,15 +98,40 @@
   background-repeat: no-repeat;
 }
 
-/*.heading-2 {
-  margin-bottom: 25px;
-}*/
+.back-inner__bg-triangle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
 
-/*.intro__text {
+.back-inner__text-sedona {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+
+  width: 229px;
+  height: 39px;
+}
+
+.heading-2 {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.intro__heading-2 {
+  margin: 0;
   margin-bottom: 27px;
+}
+
+.intro__text-inner {
+  width: 275px;
+  margin: 0 auto;
+  //margin-bottom: 16px;
 
   line-height: 24px;
-}*/
+  text-align: center;
+}
 
 .intro__text--form {
   margin-bottom: 17px;
@@ -139,6 +146,10 @@
     width: auto;
 
     border: none;
+  }
+
+  .intro--photo {
+    margin-bottom: 44px;
   }
 
   .intro__back {
@@ -191,6 +202,14 @@
   }
 
   //Стили для внутренних страниц планшета
+  substrate {
+    background-color: #e5e5e5;
+  }
+
+  .intro--form {
+    margin-bottom: 57px;
+  }
+
   .intro__back-inner {
     position: relative;
     width: auto;
@@ -204,27 +223,41 @@
     margin-bottom: 75px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
   }
 
   .back-inner__text-sedona {
     position: absolute;
-    top: -20px;
-    left: 153px;
+    top: 94px;
+    left: 154px;
 
     width: 460px;
-    height: 350px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .back-inner__bg-triangle {
+    width: 768px;
   }
 
   .intro__heading-2 {
+    width: 400px;
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
     padding: 0;
     font-size: 30px;
     line-height: 26px;
     text-align: center;
   }
+
+  .intro__text-inner {
+    width: 447px;
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
 }
 
 //Стили для ПК
@@ -237,7 +270,7 @@
     background-repeat: no-repeat;
   }
 
-  .back__text-sedona {
+.back__text-sedona {
     position: absolute;
     top: 77px;
     left: 370px;
@@ -248,6 +281,10 @@
   }
 
   //Стили для внутренних страниц ПК
+  .intro--form {
+    margin-bottom: 44px;
+  }
+
   .intro__back-inner {
     position: relative;
     width: auto;
@@ -257,22 +294,31 @@
 
   .back-inner {
     width: 1200px;
-    margin-bottom: 75px;
+    height: 300px;;
+    margin-bottom: 111px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
   }
 
   .back-inner__text-sedona {
     position: absolute;
-    top: 0;
-    left: 357px;
+    top: 102px;
+    left: 370px;
+
+    width: 460px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .back-inner__bg-triangle {
+    width: 1200px;
   }
 
   .intro__heading-2 {
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     padding: 0;
     font-size: 30px;
     line-height: 26px;

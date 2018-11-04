@@ -2,7 +2,6 @@
   width: 280px;
   margin: 0 auto;
   margin-top: 18px;
-  margin-bottom: 51px;
 }
 
 .feedback-form__fullname {
@@ -18,17 +17,20 @@
 
 .feedback-form__heading-2 {
   margin: 0;
-  margin-bottom: 22px;
 
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
 
+.feedback-form__heading-2--fullname {
+  margin-bottom: 20px;
+}
+
 .feedback-form__fullname::after {
   position: absolute;
   content: "";
-  bottom: -5px;
+  bottom: -6px;
   left: -20px;
 
   width: 320px;
@@ -53,11 +55,12 @@
 .input-field {
   min-width: 50px;
   margin-bottom: 20px;
+  padding: 0;
   padding-top: 16px;
   padding-left: 21px;
   padding-bottom: 16px;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 
@@ -71,28 +74,21 @@ input[type="text"]::placeholder {
 
 .feedback-form__contacts {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
-.feedback-form__contacts::after {
-  position: absolute;
-  content: "";
-  bottom: -13px;
-  left: -20px;
-
-  width: 320px;
-  height: 1px;
-  background-color: #e5e5e5;
+.feedback-form__heading-2--contacts {
+  margin-bottom: 24px;
 }
 
-.feedback-form__text--contacts {
+.feedback-form__contacts--text {
   display: block;
   padding-left: 22px;
   margin-bottom: 10px;
 }
 
-.feedback-form__phone--contacts,
-.feedback-form__email--contacts {
+.feedback-form__contacts--phone,
+.feedback-form__contacts--email {
   margin-bottom: 15px;
   padding-top: 16px;
   padding-left: 21px;
@@ -116,30 +112,30 @@ input[type="text"]::placeholder {
 
 .feedback-form__button--phone {
   position: absolute;
-  top: 80px;
+  top: 81px;
   right: 0;
 }
 
 .feedback-form__button--email {
   position: absolute;
-  bottom: 15px;
+  bottom: 16px;
   right: 0;
 }
 
-.feedback-form__impression {
-  position: relative;
-  margin-bottom: 62px;
-}
-
-.feedback-form__impression::after {
+.feedback-form__contacts::after {
   position: absolute;
   content: "";
-  bottom: -44px;
+  bottom: -12px;
   left: -20px;
 
   width: 320px;
   height: 1px;
   background-color: #e5e5e5;
+}
+
+.feedback-form__impression {
+  position: relative;
+  margin-bottom: 63px;
 }
 
 .feedback-form__list {
@@ -188,20 +184,23 @@ input[type="radio"]:checked + .radio-indicator::after {
   border-radius: 50%;
 }
 
-.feedback-form__attraction-heading {
-  margin: 0;
-  margin-bottom: 22px;
+.feedback-form__impression::after {
+  position: absolute;
+  content: "";
+  bottom: -45px;
+  left: -20px;
 
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
 }
 
-.feedback-form__attraction-list {
-  @include reset-list;
+.feedback-form__attraction {
+  position: relative;
+  margin-bottom: 0;
 }
 
-.feedback-form__attraction-item {
+.feedback-form__item--attraction {
   position: relative;
   margin-top: 32px;
   margin-left: 78px;
@@ -213,7 +212,11 @@ input[type="radio"]:checked + .radio-indicator::after {
   list-style: none;
 }
 
-.feedback-form__attraction-checkbox {
+.feedback-form__item--attraction:last-child {
+  margin-bottom: 60px;
+}
+
+.feedback-form__checkbox {
   cursor: pointer;
 }
 
@@ -238,12 +241,27 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   background-repeat: no-repeat;
 }
 
+.feedback-form__attraction::after {
+  position: absolute;
+  content: "";
+  bottom: -41px;
+  left: -20px;
 
-textarea {
+  width: 320px;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.feedback-form__heading-2--emotions {
+  margin-bottom: 16px;
+}
+
+.feedback-form__textarea {
   width: 237px;
-  height: 160px;
-  margin-bottom: 51px;
-  padding: 22px 21px;
+  height: 130px;
+  margin-top: 0;
+  margin-bottom: 46px;
+  padding: 15px 21px;
 
   font-size: 18px;
   line-height: 26px;
@@ -257,7 +275,10 @@ textarea {
 .feedback-form__button--send {
   width: 280px;
   margin: 0 auto;
-  padding: 19px 21px;
+  margin-bottom: 36px;
+  padding: 0;
+  //padding-top: 15px;
+  //padding-left: 21px;
 
   font-size: 21px;
   line-height: 26px;
@@ -269,19 +290,20 @@ textarea {
   background-color: $blue-color;
 }
 
+.feedback-form__footnote {
+  display: none;
+}
+
 //Стили для планшета
 @media (min-width: $tablet-width) {
   .feedback {
     width: auto;
-
-    outline: 2px solid red;
+    //margin-bottom: 30px;
   }
 
   .feedback__wrapper {
     width: 648px;
     margin: 0 auto;
-
-    outline: 2px solid yellow;
   }
 
   .feedback-form {
@@ -290,43 +312,185 @@ textarea {
     flex-wrap: wrap;
   }
 
+  .feedback-form__heading-2 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
   .feedback-form__impression {
+    order: 1;
+
     width: 50%;
     height: 295px;
-    margin-bottom: 80px;
+    margin-bottom: 73px;
+    //border-right: 1px solid #f2f2f2;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--impression {
+    margin-bottom: 74px;
+
+    text-align: left;
+  }
+
+  .feedback-form__item {
+    //margin: 0;
+    margin-bottom: 52px;
+    margin-left: 77px;
+  }
+
+  .feedback-form__impression::after {
+    height: 0;
   }
 
   .feedback-form__fullname {
+    order: 2;
+
+    display: flex;
+
     width: 50%;
     height: 295px;
-    margin-bottom: 80px;
+    //margin-bottom: 80px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--fullname {
+    margin-bottom: 58px;
+  }
+
+  .feedback-form__container {
+    //max-height: 56px;
+    margin-left: 58px;
+    margin-bottom: 78px;
+  }
+
+  .input-field {
+    padding-top: 29px;
+    padding-left: 20px;
+    padding-bottom: 29px;
+  }
+
+  .feedback-form__fullname::after {
+    height: 0;
   }
 
   .feedback-form__contacts {
+    order: 3;
+
     width: 100%;
     height: 250px;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--contacts  {
+    margin-bottom: 27px;
+  }
+
+  .feedback-form__contacts--text {
+    width: 627px;
+    height: 21px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__contacts--phone,
+  .feedback-form__contacts--email {
+    width: 627px;
+    height: 20px;
+    margin-bottom: 26px;
+    padding-top: 18px;
+    padding-bottom: 19px;
+  }
+
+  .feedback-form__button--phone {
+    top: 84px;
+  }
+
+  .feedback-form__button--email {
+    top: 198px;
+  }
+
+  .feedback-form__contacts::after {
+    height: 0;
   }
 
   .feedback-form__attraction {
+    order: 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     width: 100%;
     height: 235px;
-    margin-bottom: 76px;
+    margin-bottom: 71px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--attraction {
+    width: 277px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+
+    text-align: center;
+  }
+
+  .feedback-form__list--attraction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 456px;
+    margin: 0 auto;
+  }
+
+  .feedback-form__item--attraction {
+    width: 122px;
+    margin-bottom: 30px;
+  }
+
+  .feedback-form__attraction::after {
+    height: 0;
   }
 
   .feedback-form__emotions {
+    order: 5;
+
+    position: relative;
+
     width: 100%;
     height: 355px;
+    padding-bottom: 65px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--emotions {
+    margin-bottom: 57px;
+  }
+
+  .feedback-form__textarea--emotions {
+    width: 608px;
+    height: 130px;
+    margin-bottom: 52px;
+    padding: 15px 21px;
+
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: $bg-form;
+    border: none;
+  }
+
+  .feedback-form__button--send {
+    width: 324px;
+    padding-top: 3px;
+    padding-left: 25px;
+  }
+
+  .feedback-form__footnote {
+    position: absolute;
+    bottom: 63px;
+    right: -1px;
+
+    display: block;
   }
 }
 
@@ -334,49 +498,160 @@ textarea {
 @media (min-width: $desktop-width) {
   .feedback {
     width: auto;
-
-    outline: 2px solid red;
   }
 
   .feedback__wrapper {
     width: 960px;
     margin: 0 auto;
+  }
 
-    outline: 2px solid yellow;
+  .feedback-form__heading-2 {
+    margin-bottom: 72px;
+    padding-left: 80px;
+
+    text-align: left;
   }
 
   .feedback-form__impression {
-    height: 240px;
+    height: 293px;
     margin-bottom: 71px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__item {
+    margin-left: 79px;
   }
 
   .feedback-form__fullname {
-    height: 240px;
+    height: 293px;
     margin-bottom: 71px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--fullname {
+    margin-bottom: 56px;
+  }
+
+  .feedback-form__container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 79px;
   }
 
   .feedback-form__contacts {
+    display: flex;
+    flex-direction: column;
+
     height: 155px;
     margin-bottom: 56px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--contacts {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 76px;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .feedback-form__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .feedback-form__contacts--text:first-child {
+    width: 85px;
+    margin-right: 0;
+  }
+
+  .feedback-form__contacts--text {
+    width: 150px;
+    height: 21px;
+    margin: 0;
+    margin-right: 17px;
+    padding: 0;
+    padding-top: 19px;
+  }
+
+  .feedback-form__contacts--wrap {
+    display: none;
+  }
+
+  .feedback-form__contacts--phone {
+    width: 295px;
+    height: 20px;
+    margin-right: 82px;
+  }
+
+  .feedback-form__button--phone {
+    position: absolute;
+
+    top: 0;
+    left: 342px;
+  }
+
+  .feedback-form__contacts--email {
+    width: 295px;
+    height: 20px;
   }
 
   .feedback-form__attraction {
-    height: 145px;
-    margin-bottom: 74px;
+    display: flex;
+    flex-direction: column;
 
-    outline: 2px solid green;
+    height: 197px;
+    margin-bottom: 20px;
+  }
+
+  .feedback-form__button--email {
+    position: absolute;
+
+    top: 0;
+    left: 902px;
+  }
+
+  .feedback-form__heading-2--attraction {
+    margin: 0 auto;
+    margin-bottom: 29px;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .feedback-form__list--attraction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 954px;
   }
 
   .feedback-form__emotions {
     width: 100%;
     height: 355px;
+    padding-bottom: 70px;
+  }
 
-    outline: 2px solid green;
+  .feedback-form__heading-2--emotions {
+    margin-bottom: 58px;
+    padding: 0;
+
+    text-align: center;
+  }
+
+  .feedback-form__textarea--emotions {
+    width: 918px;
+  }
+
+  .feedback-form__button--send {
+    width: 480px;
+    padding-left: 32px;
+  }
+
+  .feedback-form__footnote {
+    bottom: 68px;
   }
 }

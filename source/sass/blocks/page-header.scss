@@ -5,15 +5,27 @@
   flex-direction: column;
 }
 
+.block-mock {
+  position: relative;
+
+  width: 320px;
+  height: 54px;
+  margin: 0 auto;
+}
+
 .page-header__logo {
   position: absolute;
-  bottom: -90px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
+  .block-mock {
+    height: 0;
+  }
+
   .page-header__logo {
     position: absolute;
     top: 0;

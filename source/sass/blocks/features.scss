@@ -366,6 +366,10 @@
     width: 165px;
     margin-bottom: 56px;
   }
+
+  .features__item--rest::after {
+    display: none;
+  }
 }
 
 //Стили для ПК
@@ -540,5 +544,9 @@
     width: 278px;
     margin: 0 auto;
     margin-bottom: 56px;
+  }
+
+  .features__item--rest::after {
+    display: none;
   }
 }
