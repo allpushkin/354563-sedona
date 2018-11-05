@@ -2,14 +2,14 @@
   font-weight: 400;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("font/ptSans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
+  src: url("fonts/ptsans.woff2") format("woff2"), url("fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "PT Sans";
   font-style: normal;
-  src: url("font/ptSansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
+  src: url("fonts/ptsansbold.woff2") format("woff2"), url("fonts/ptsansbold.woff") format("woff");
 }
 
 body {
@@ -26,9 +26,8 @@ body {
   text-transform: uppercase;
 }
 
-.container {
-  width: 320px;
-  margin: 0 auto;
+.substrate {
+  background-color: #f2f2f2;
 }
 
 a {
@@ -70,6 +69,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
 @import "blocks/variables.scss";
 @import "blocks/mixins.scss";
 @import "blocks/page-header.scss";
@@ -82,3 +87,17 @@ input[type="radio"].visually-hidden {
 @import "blocks/gallery.scss";
 @import "blocks/video.scss";
 @import "blocks/feedback.scss";
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

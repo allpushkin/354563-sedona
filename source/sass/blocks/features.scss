@@ -1,5 +1,5 @@
 .features {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .features__wrapper {
@@ -7,51 +7,51 @@
   margin: 0 auto;
 }
 
-.features__list,
-.advantage__list {
+.features__list {
   @include reset-list;
 
   text-align: center;
 }
 
 .features__main {
-  height: 471px;
+  //height: 470px;
+  //margin-bottom: 25px;
 
   color: #ffffff;
 
   background-color: $blue-color;
 }
 
-.features__main-images--tablet,
-.features__main-images--desktop {
-  display: none;
+.features__main-images {
+  display: block;
+
+  height: 260px;
 }
 
 .features__main-intro {
-  height: 211px;
+  height: 210px;
 }
 
 .heading-3 {
-  margin: 0;
-
-  font-size: 21px;
-  line-height: 10px;
+  font-size: 18px;
+  line-height: 26px;
 
   text-align: center;
 }
 
 .features__heading-3 {
-  padding-top: 55px;
+  padding-top: 56px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 .features__number {
-  margin-bottom: 16px;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .features__description {
-  width: 270px;
+  width: 273px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -62,26 +62,21 @@
   padding: 0;
 }
 
+.advantage__list {
+  @include reset-list;
+  margin-top: 34px;
+  margin-bottom: 37px;
+}
+
 .advantage__item {
   position: relative;
-  height: 135px;
-  padding-top: 35px;
+
+  margin-bottom: 28px;
 }
 
 .icon__lodging {
   position: absolute;
-  top: 25px;
-  left: 21px;
-
-  width: 39px;
-  height: 37px;
-
-  fill: $blue-color;
-}
-
-.icon__suvenirs {
-  position: absolute;
-  top: 25px;
+  top: -10px;
   left: 21px;
 
   width: 39px;
@@ -92,7 +87,18 @@
 
 .icon__food {
   position: absolute;
-  top: 25px;
+  top: -5px;
+  left: 19px;
+
+  width: 39px;
+  height: 37px;
+
+  fill: $blue-color;
+}
+
+.icon__suvenirs {
+  position: absolute;
+  top: -10px;
   left: 21px;
 
   width: 39px;
@@ -102,29 +108,59 @@
 }
 
 .advantage__heading-3 {
+  margin: 0;
+  margin-bottom: 14px;
+  //padding-top: 9px;
   padding-left: 70px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
+
   text-align: left;
 }
 
 .advantage__text {
+  margin: 0;
   padding-left: 70px;
   width: 230px;
   text-align: left;
 }
 
+.features__main-intro--bridge {
+  height: 191px;
+}
+
+.features__heading-3--bridge {
+  padding-top: 39px;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
 .features__item--rest {
-  height: 170px;
+  position: relative;
+
+  height: 168px;
   margin: 0;
   padding: 0;
 
   background-color: $bg-grey;
 }
 
-.heading-3__rest {
-  padding-top: 29px;
+.features__item--rest::after {
+  position: absolute;
+  content: "";
+  z-index: 100;
+  bottom: 0;
+  left: 20px;
+
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
+.features__item--rest:last-child::after {
+  background-color: $bg-grey;
+}
+
+.features__heading-3--rest {
+  padding-top: 27px;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -139,7 +175,7 @@
   .features {
     width: auto;
     margin: 0 auto;
-    margin-bottom: 57px;
+    margin-bottom: 54px;
   }
 
   .features__wrapper {
@@ -168,13 +204,22 @@
     width: 256px;
   }
 
-  .features__heading-3 {
-    width: 170px;
-    margin: 0 auto;
-    padding-top: 56px;
-
+  .heading-3 {
+    font-size: 21px;
     line-height: 26px;
+  }
+
+  .features__heading-3 {
+    width: 151px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-top: 44px;
+
     text-align: center;
+  }
+
+  .features__number {
+    margin-bottom: 21px;
   }
 
   .features__description {
@@ -183,20 +228,19 @@
     padding: 0;
   }
 
-  .features__main-images--tablet {
+  .features__main-images {
     display: block;
     width: 512px;
     height: 256px;
   }
 
-  .features__main-images--mobile,
-  .features__main-images--desktop {
-    display: none;
-  }
-
   .advantage__list {
     display: flex;
     flex-direction: row;
+
+    min-height: 330px;
+    margin: 0;
+    padding: 0;
   }
 
   .advantage__item {
@@ -204,12 +248,25 @@
 
     width: 256px;
     height: 166px;
-    margin-top: 164px;
+    margin: 0;
+    padding-top: 158px;
+  }
+
+  .advantage__item--suvenirs {
+    display: flex;
+    flex-direction: column;
+    order: 3;
+  }
+
+  .advantage__item--food {
+    display: flex;
+    flex-direction: column;
+    order: 2;
   }
 
   .advantage__heading-3 {
     margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
     padding: 0;
 
     font-size: 21px;
@@ -224,9 +281,18 @@
     text-align: center;
   }
 
+  .advantage__text--lodging {
+    width: 156px;
+  }
+
+  .advantage__text--food {
+    width: 152px;
+  }
+
   .icon__lodging {
     position: absolute;
-    top: -64px;
+    order: 1;
+    top: 59px;
     left: 90px;
 
     width: 75px;
@@ -237,8 +303,9 @@
 
   .icon__suvenirs {
     position: absolute;
-    top: -64px;
-    left: 90px;
+    order: 3;
+    top: 56px;
+    left: 95px;
 
     width: 64px;
     height: 75px;
@@ -248,8 +315,9 @@
 
   .icon__food {
     position: absolute;
-    top: -66px;
-    left: 90px;
+    order: 2;
+    top: 62px;
+    left: 89px;
 
     width: 77px;
     height: 68px;
@@ -257,7 +325,24 @@
     fill: $blue-color;
   }
 
+  .features__main-intro--bridge {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .features__heading-3--bridge {
+    width: 151px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding-top: 44px;
+
+    text-align: center;
+  }
+
   .features__item--rest {
+    display: flex;
+
     width: 256px;
     height: 256px;
     margin: 0;
@@ -265,8 +350,11 @@
   }
 
   .features__item--wrap {
+    display: flex;
+    flex-direction: column;
     width: 166px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .heading-3__rest {
@@ -278,14 +366,22 @@
     width: 165px;
     margin-bottom: 56px;
   }
+
+  .features__item--rest::after {
+    display: none;
+  }
 }
 
 //Стили для ПК
 @media (min-width: $desktop-width) {
+  .features {
+    margin-bottom: 54px;
+  }
+
   .features__wrapper {
     width: 1200px;
     min-height: 256px;
-    margin-bottom: 57px;
+    //margin-bottom: 57px;
   }
 
   .features__list {
@@ -303,7 +399,8 @@
     display: flex;
 
     width: 1200px;
-    height: 256px;
+    min-height: 256px;
+    overflow: hidden;
   }
 
   .features__main-intro {
@@ -314,28 +411,26 @@
   .features__heading-3 {
     width: 170px;
     margin: 0 auto;
-    padding-top: 56px;
+    padding-top: 51px;
+    margin-bottom: 10px;
 
     line-height: 26px;
     text-align: center;
   }
 
   .features__description {
-    width: 170px;
+    width: 290px;
     margin: 0 auto;
     padding: 0;
   }
 
-  .features__main-images--desktop {
+  .features__main-images {
     display: block;
-    width: 800px;
-    height: 256px;
-    overflow: hidden;
-  }
 
-  .features__main-images--mobile,
-  .features__main-images--tablet {
-    display: none;
+    width: 800px;
+    height: auto;
+    margin: 0;
+    padding: 0;
   }
 
   .advantage__list {
@@ -348,20 +443,20 @@
 
     width: 400px;
     height: 166px;
-    margin-top: 162px;
+    //margin-top: 162px;
   }
 
   .advantage__heading-3 {
     margin: 0;
+    margin-bottom: 22px;
     padding: 0;
-    padding-bottom: 26px;
 
     font-size: 21px;
     text-align: center;
   }
 
   .advantage__text {
-    width: 270px;
+    width: 285px;
     margin: 0 auto;
     padding: 0;
 
@@ -370,7 +465,7 @@
 
   .icon__lodging {
     position: absolute;
-    top: -64px;
+    top: 59px;
     left: 161px;
 
     width: 75px;
@@ -381,8 +476,8 @@
 
   .icon__suvenirs {
     position: absolute;
-    top: -64px;
-    left: 161px;
+    top: 58px;
+    left: 167px;
 
     width: 64px;
     height: 75px;
@@ -392,7 +487,7 @@
 
   .icon__food {
     position: absolute;
-    top: -66px;
+    top: 62px;
     left: 161px;
 
     width: 77px;
@@ -401,7 +496,24 @@
     fill: $blue-color;
   }
 
+  .features__heading-3--bridge {
+    width: 151px;
+    margin: 0 auto;
+    margin-bottom: 11px;
+    padding-top: 51px;
+
+    text-align: center;
+  }
+
+  .features__description--bridge {
+    width: 230px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
   .features__item--rest {
+    display: flex;
+
     width: 400px;
     height: 256px;
     margin: 0;
@@ -409,8 +521,11 @@
   }
 
   .features__item--wrap {
+    display: flex;
+    flex-direction: column;
     width: 400px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .heading-3__rest {
@@ -418,8 +533,20 @@
     padding-top: 50px;
   }
 
-  .features__description-rest {
-    width: 314px;
+  .features__heading-3--rest {
+    width: 160px;
+    padding-top: 44px;
     margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .features__description--rest {
+    width: 278px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
+
+  .features__item--rest::after {
+    display: none;
   }
 }

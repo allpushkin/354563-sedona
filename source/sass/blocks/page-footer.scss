@@ -1,4 +1,7 @@
 .hashtag {
+  margin: 0;
+  padding-top: 36px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -9,15 +12,13 @@
   display: flex;
   justify-content: center;
 
-  margin: 0;
-  margin-bottom: 31px;
-  padding: 0;
+  @include reset-list;
 
-  list-style: none;
+  margin-top: 36px;
 }
 
 .social__item {
-  padding-right: 6px;
+  margin-right: 3px;
 }
 
 .social__link {
@@ -46,19 +47,41 @@
   fill: #818181;
 }
 
+.copyright {
+  margin-top: 30px;
+}
+
 .page-footer__copyright {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.copyright__svg {
-  width: 27px;
-  height: 34px;
-  padding-top: 5px;
-  padding-left: 6px;
+.copyright__text {
+  line-height: 24px;
+  margin-left: 13px;
 }
 
+.copyright__svg {
+  width: 41px;
+  height: 45px;
+  padding-top: 5px;
+  padding-left: 3px;
+}
+
+//Внутренние страницы
+.hashtag-inner {
+  //margin: 23px;
+  margin: 0;
+  padding-top: 23px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
+//Стили для планшета
 @media (min-width: $tablet-width) {
   .page-footer {
     width: auto;
@@ -73,49 +96,79 @@
   }
 
   .hashtag {
-    margin-top: 49px;
+    margin-top: 9px;
   }
 
   .social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0;
     margin-top: 36px;
   }
 
+  .social__list {
+    margin: 0;
+    margin-left: -8px;
+    padding: 0;
+  }
+
+  .social__item {
+    margin-right: 5px;
+  }
+
   .copyright__text {
-    margin-top: 48px;
+    margin: 0;
+    margin-top: 46px;
+    padding-right: 6px;
   }
 
   .copyright__svg {
-    width: 27px;
-    height: 34px;
-    margin-top: 43px;
+    width: 41px;
+    height: 45px;
+    margin-top: 37px;
     padding: 0;
-    padding-left: 12px;
+  }
+
+  .page-footer__copyright {
+    width: 123px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hashtag-inner {
+    margin: 0;
+    padding-top: 46px;
   }
 }
 
+//Стили для экрана ПК
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 960px;
     margin: 0 auto;
   }
 
-  .hashtag {
-    margin-top: 49px;
-  }
-
   .social {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0;
     margin-top: 36px;
   }
 
+  .social__item {
+    margin-right: 5px;
+  }
+
   .copyright__text {
-    margin-top: 48px;
+    margin-top: 46px;
   }
 
   .copyright__svg {
-    width: 27px;
-    height: 34px;
-    margin-top: 43px;
+    width: 41px;
+    height: 45px;
+    margin-top: 36px;
     padding: 0;
-    padding-left: 12px;
   }
 }

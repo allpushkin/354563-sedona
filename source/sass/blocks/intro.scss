@@ -1,13 +1,14 @@
 .intro__back {
   position: relative;
-  width: 320px;
+
   min-height: 390px;
   margin: 0 auto;
+  margin-bottom: 40px;
+  //padding-top: 54px;
 }
 
 .back {
-  margin-top: 56px;
-  margin-bottom: 42px;
+  width: 320px;
 
   background-color: $bg-grey;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -26,19 +27,20 @@
 
 .back__bg-triangle {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
 
 .intro__features {
   position: relative;
+  width: 320px;
   margin: 0 auto;
 }
 
-.intro__heading {
+.intro__promo {
   width: 267px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   padding: 0;
   font-size: 18px;
   line-height: 26px;
@@ -48,40 +50,34 @@
 
 .intro__bg-triangle {
   position: absolute;
-  bottom: -50px;
+  bottom: -43px;
   left: 0;
 }
 
-.heading-2 {
-  margin: 0;
-  margin-bottom: 31px;
+.intro__text {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
 
-  font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
 
-.intro__text {
+//Стили внутрениих страниц мобильный
+.intro {
+  width: 320px;
   margin: 0 auto;
-  margin-bottom: 25px;
-  width: 280px;
-  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-//Стили внутрениих страниц
-.back-inner__text-sedona {
-  position: absolute;
-  top: 52px;
-  left: 45px;
-
-  width: 229px;
-  height: 39px;
+.intro--photo {
+  margin-bottom: 19px;
+  padding-bottom: 26px;
 }
 
-.back-inner__bg-triangle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.intro--form {
+  margin-bottom: 19px;
+  padding-bottom: 16px;
 }
 
 .intro__back-inner {
@@ -93,8 +89,8 @@
 
 .back-inner {
   position: relative;
-  margin-top: 56px;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  margin-bottom: 39px;
 
   background-color: $bg-grey;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -102,18 +98,71 @@
   background-repeat: no-repeat;
 }
 
+.back-inner__bg-triangle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.back-inner__text-sedona {
+  position: absolute;
+  top: 52px;
+  left: 45px;
+
+  width: 229px;
+  height: 39px;
+}
+
+.heading-2 {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.intro__heading-2 {
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.intro__text-inner {
+  width: 275px;
+  margin: 0 auto;
+  //margin-bottom: 16px;
+
+  line-height: 24px;
+  text-align: center;
+}
+
+.intro__text--form {
+  margin-bottom: 17px;
+
+  line-height: 24px;
+  text-align: center;
+}
+
 //Стили для планшета
 @media (min-width: $tablet-width) {
+  .intro {
+    width: auto;
+
+    border: none;
+  }
+
+  .intro--photo {
+    margin-bottom: 44px;
+  }
+
   .intro__back {
     position: relative;
+
     width: auto;
-    height: 518px;
+    min-height: 518px;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
 
   .back {
     width: 768px;
-    margin-bottom: 53px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: top center;
@@ -129,15 +178,19 @@
     height: 350px;
   }
 
+  .back__bg-triangle {
+    width: 768px;
+  }
+
   .intro__features {
     width: 100%;
     margin-bottom: 51px;
   }
 
-  .intro__heading {
+  .intro__promo {
     width: 500px;
     margin: 0 auto;
-    margin-bottom: 37px;
+    margin-bottom: 28px;
     padding: 0;
     font-size: 21px;
     line-height: 26px;
@@ -149,6 +202,14 @@
   }
 
   //Стили для внутренних страниц планшета
+  .substrate {
+    background-color: #e5e5e5;
+  }
+
+  .intro--form {
+    margin-bottom: 57px;
+  }
+
   .intro__back-inner {
     position: relative;
     width: auto;
@@ -158,28 +219,42 @@
 
   .back-inner {
     width: 768px;
+    margin: 0 auto;
     margin-bottom: 75px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
   }
 
   .back-inner__text-sedona {
     position: absolute;
-    top: -20px;
-    left: 153px;
+    top: 94px;
+    left: 154px;
 
     width: 460px;
-    height: 350px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .back-inner__bg-triangle {
+    width: 768px;
   }
 
   .intro__heading-2 {
+    width: 400px;
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 30px;
     padding: 0;
     font-size: 30px;
     line-height: 26px;
+    text-align: center;
+  }
+
+  .intro__text-inner {
+    width: 447px;
+    margin: 0 auto;
+
     text-align: center;
   }
 }
@@ -197,10 +272,18 @@
   .back__text-sedona {
     position: absolute;
     top: 77px;
-    left: 357px;
+    left: 370px;
   }
 
-  //Стили для внутренних страниц
+  .back__bg-triangle {
+    width: 1200px;
+  }
+
+  //Стили для внутренних страниц ПК
+  .intro--form {
+    margin-bottom: 44px;
+  }
+
   .intro__back-inner {
     position: relative;
     width: auto;
@@ -210,22 +293,31 @@
 
   .back-inner {
     width: 1200px;
-    margin-bottom: 75px;
+    height: 300px;
+    margin-bottom: 111px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
   }
 
   .back-inner__text-sedona {
     position: absolute;
-    top: 0;
-    left: 357px;
+    top: 102px;
+    left: 370px;
+
+    width: 460px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .back-inner__bg-triangle {
+    width: 1200px;
   }
 
   .intro__heading-2 {
     margin: 0 auto;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     padding: 0;
     font-size: 30px;
     line-height: 26px;
@@ -233,7 +325,7 @@
   }
 
   .intro__text {
-    width: 430px;
-    margin-bottom: 70px;
+    width: 768px;
+    margin-bottom: 50px;
   }
 }

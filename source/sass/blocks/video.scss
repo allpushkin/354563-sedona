@@ -1,6 +1,6 @@
 .video__heading-2 {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 
   font-size: 18px;
   line-height: 26px;
@@ -9,9 +9,12 @@
 }
 
 .video__text {
-  width: 242px;
+  width: 240px;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
+
+  line-height: 24px;
+  text-align: center;
 }
 
 .video__roller {
@@ -87,33 +90,37 @@
 @media (min-width: $tablet-width) {
   .video {
     width: auto;
-
-    outline: 2px solid red;
+    padding-bottom: 35px;
   }
 
   .video__wrapper {
+    position: relative;
+
     width: 648px;
     margin: 0 auto;
-
-    outline: 2px solid yellow;
   }
 
   .video__heading-2 {
-    margin-bottom: 34px;
+    margin-bottom: 31px;
 
     font-size: 30px;
   }
 
   .video__text {
     width: 440px;
-    margin-bottom: 75px;
+    margin-bottom: 73px;
 
     text-align: center;
   }
 
+  .gallery__video {
+    width: 648px;
+    height: 499px;
+  }
+
   .video__roller {
-    position: relative;
-    top: 93px;
+    position: absolute;
+    top: 584px;
 
     width: 648px;
     height: 93px;
@@ -149,8 +156,8 @@
   }
 
   .video__list {
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 584px;
 
     display: flex;
     width: 648px;
@@ -186,24 +193,31 @@
   }
 }
 
+//Стили для экрана ПК
 @media (min-width: $desktop-width) {
   .video {
     width: auto;
-
-    outline: 2px solid red;
+    padding-bottom: 79px;
   }
 
   .video__wrapper {
     width: 800px;
     margin: 0 auto;
-
-    outline: 2px solid yellow;
   }
 
+  .video__text {
+    margin-bottom: 72px;
+  }
+
+  .gallery__video {
+    position: relative;
+
+    width: 800px;
+  }
 
   .video__roller {
-    position: relative;
-    top: 93px;
+    position: absolute;
+    bottom: 0;
 
     width: 800px;
     height: 93px;
@@ -239,8 +253,8 @@
   }
 
   .video__list {
-    position: relative;
-    top: 0;
+    position: absolute;
+    bottom: 0;
 
     display: flex;
     width: 800px;
