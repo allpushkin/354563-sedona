@@ -15,11 +15,10 @@
   background-position: top center;
   background-repeat: no-repeat;
 
-  @media (min-resolution: $retina-dpi),
-         (min-resolution: $retina-dppx) {
-     background-image: url("../img/bg-back-mobile@2x.jpg");
-     background-size: auto 100%;
-   }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: auto 100%;
+  }
 }
 
 .back__text-sedona {
@@ -174,11 +173,10 @@
     background-position: top center;
     background-repeat: no-repeat;
 
-    @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx) {
-       background-image: url("../img/bg-back-tablet@2x.jpg");
-       background-size: 100% auto;
-     }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   .back__text-sedona {
@@ -280,11 +278,10 @@
     background-position: top center;
     background-repeat: no-repeat;
 
-    @media (min-resolution: $retina-dpi),
-           (min-resolution: $retina-dppx) {
-       background-image: url("../img/bg-back-desktop@2x.jpg");
-       background-size: 100% auto;
-     }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 100% auto;
+    }
   }
 
   .back__text-sedona {
