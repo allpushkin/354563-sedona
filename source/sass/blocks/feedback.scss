@@ -43,6 +43,8 @@
   justify-content: space-between;
   flex-grow: 1;
 
+
+  max-height: 78px;
   margin: 0;
   padding: 0;
 }
@@ -81,18 +83,19 @@ input[type="text"]::placeholder {
   margin-bottom: 24px;
 }
 
-.feedback-form__contacts--text {
+.feedback-form__contacts-text {
   display: block;
   padding-left: 22px;
   margin-bottom: 10px;
 }
 
-.feedback-form__contacts--phone,
-.feedback-form__contacts--email {
+.feedback-form__contacts-phone,
+.feedback-form__contacts-email {
   margin-bottom: 15px;
   padding-top: 16px;
   padding-left: 21px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
+  padding-right: 21px;
 
   font-size: 16px;
   line-height: 26px;
@@ -321,8 +324,8 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     order: 1;
 
     width: 50%;
-    height: 295px;
-    margin-bottom: 73px;
+    min-height: 295px;
+    margin-bottom: 34px;
     //border-right: 1px solid #f2f2f2;
   }
 
@@ -380,22 +383,22 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     order: 3;
 
     width: 100%;
-    height: 250px;
-    margin-bottom: 58px;
+    min-height: 250px;
+    margin-bottom: 27px;
   }
 
   .feedback-form__heading-2--contacts {
     margin-bottom: 27px;
   }
 
-  .feedback-form__contacts--text {
+  .feedback-form__contacts-text {
     width: 627px;
     height: 21px;
     margin-bottom: 10px;
   }
 
-  .feedback-form__contacts--phone,
-  .feedback-form__contacts--email {
+  .feedback-form__contacts-phone,
+  .feedback-form__contacts-email {
     width: 627px;
     height: 20px;
     margin-bottom: 26px;
@@ -423,8 +426,8 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     flex-wrap: wrap;
 
     width: 100%;
-    height: 235px;
-    margin-bottom: 71px;
+    min-height: 235px;
+    margin-bottom: 23px;
   }
 
   .feedback-form__heading-2--attraction {
@@ -516,8 +519,8 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__impression {
-    height: 293px;
-    margin-bottom: 71px;
+    min-height: 293px;
+    margin-bottom: 32px;
   }
 
   .feedback-form__item {
@@ -549,7 +552,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     display: flex;
     flex-direction: column;
 
-    height: 155px;
+    min-height: 155px;
     margin-bottom: 56px;
   }
 
@@ -567,15 +570,16 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .feedback-form__contacts--text:first-child {
+  .feedback-form__contacts-text:first-child {
     width: 85px;
     margin-right: 0;
   }
 
-  .feedback-form__contacts--text {
+  .feedback-form__contacts-text {
     width: 150px;
     height: 21px;
     margin: 0;
@@ -584,14 +588,14 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     padding-top: 19px;
   }
 
-  .feedback-form__contacts--wrap {
+  .feedback-form__wrap {
     display: none;
   }
 
-  .feedback-form__contacts--phone {
+  .feedback-form__contacts-phone {
     width: 295px;
     height: 20px;
-    margin-right: 82px;
+    margin-right: 74px;
   }
 
   .feedback-form__button--phone {
@@ -601,7 +605,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     left: 342px;
   }
 
-  .feedback-form__contacts--email {
+  .feedback-form__contacts-email {
     width: 295px;
     height: 20px;
   }
@@ -610,7 +614,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     display: flex;
     flex-direction: column;
 
-    height: 197px;
+    min-height: 197px;
     margin-bottom: 20px;
   }
 
@@ -655,7 +659,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     margin-bottom: 50px;
   }
 
-  .feedback-form__button--send {
+  .--send {
     width: 480px;
     padding: 0;
     margin: 0 auto;

@@ -70,6 +70,8 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  display: block;
+
   width: 320px;
   margin: 0 auto;
   background: #ffffff;
