@@ -43,7 +43,6 @@
   justify-content: space-between;
   flex-grow: 1;
 
-
   max-height: 78px;
   margin: 0;
   padding: 0;
@@ -71,7 +70,10 @@
 }
 
 input[type="text"]::placeholder {
+  font-size: 18px;
+  line-height: 26px;
   color: #000000;
+
 }
 
 .feedback-form__contacts {
@@ -94,7 +96,7 @@ input[type="text"]::placeholder {
   margin-bottom: 15px;
   padding-top: 16px;
   padding-left: 21px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   padding-right: 21px;
 
   font-size: 16px;
@@ -203,7 +205,12 @@ input[type="radio"]:checked + .radio-indicator::after {
   margin-bottom: 0;
 }
 
-.feedback-form__item--attraction {
+.feedback-form__attraction-list {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__attraction-item {
   position: relative;
   margin-top: 32px;
   margin-left: 78px;
@@ -215,7 +222,7 @@ input[type="radio"]:checked + .radio-indicator::after {
   list-style: none;
 }
 
-.feedback-form__item--attraction:last-child {
+.feedback-form__attraction-item:last-child {
   margin-bottom: 60px;
 }
 
@@ -280,8 +287,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   margin: 0 auto;
   margin-bottom: 36px;
   padding: 0;
-  //padding-top: 15px;
-  //padding-left: 21px;
 
   font-size: 18px;
   line-height: 21px;
@@ -301,7 +306,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 @media (min-width: $tablet-width) {
   .feedback {
     width: auto;
-    //margin-bottom: 30px;
   }
 
   .feedback__wrapper {
@@ -326,7 +330,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     width: 50%;
     min-height: 295px;
     margin-bottom: 34px;
-    //border-right: 1px solid #f2f2f2;
   }
 
   .feedback-form__heading-2--impression {
@@ -336,7 +339,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__item {
-    //margin: 0;
     margin-bottom: 52px;
     margin-left: 77px;
   }
@@ -402,8 +404,9 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     width: 627px;
     height: 20px;
     margin-bottom: 26px;
-    padding-top: 18px;
+    padding-top: 19px;
     padding-bottom: 19px;
+    padding-right: 0;
   }
 
   .feedback-form__button--phone {
@@ -430,7 +433,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     margin-bottom: 23px;
   }
 
-  .feedback-form__heading-2--attraction {
+  .feedback-form__heading-2 {
     width: 277px;
     height: 50px;
     margin: 0 auto;
@@ -439,18 +442,19 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     text-align: center;
   }
 
-  .feedback-form__list--attraction {
+  .feedback-form__attraction-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
-    width: 456px;
+    min-width: 470px;
     margin: 0 auto;
   }
 
-  .feedback-form__item--attraction {
-    width: 122px;
+  .feedback-form__attraction-item {
+    min-width: 205px;
     margin-bottom: 30px;
+    margin-left: 50px;;
   }
 
   .feedback-form__attraction::after {
@@ -553,7 +557,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     flex-direction: column;
 
     min-height: 155px;
-    margin-bottom: 56px;
+    margin-bottom: 23px;
   }
 
   .feedback-form__heading-2--contacts {
@@ -595,7 +599,10 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   .feedback-form__contacts-phone {
     width: 295px;
     height: 20px;
+    padding-top: 20px;
     margin-right: 74px;
+    padding-bottom: 20px;
+    padding-right: 0;
   }
 
   .feedback-form__button--phone {
@@ -610,14 +617,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     height: 20px;
   }
 
-  .feedback-form__attraction {
-    display: flex;
-    flex-direction: column;
-
-    min-height: 197px;
-    margin-bottom: 20px;
-  }
-
   .feedback-form__button--email {
     position: absolute;
 
@@ -625,20 +624,25 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     left: 902px;
   }
 
-  .feedback-form__heading-2--attraction {
+  .feedback-form__attraction {
+    min-height: 193px;
+  }
+
+  .feedback-form__heading-2 {
     margin: 0 auto;
-    margin-bottom: 29px;
+    margin-bottom: 56px;
     padding: 0;
 
     text-align: center;
   }
 
-  .feedback-form__list--attraction {
+  .feedback-form__attraction-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    width: 954px;
+    min-width: 954px;
+    margin: 0;
   }
 
   .feedback-form__emotions {
@@ -659,7 +663,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     margin-bottom: 50px;
   }
 
-  .--send {
+  .feedback-form__button--send {
     width: 480px;
     padding: 0;
     margin: 0 auto;
