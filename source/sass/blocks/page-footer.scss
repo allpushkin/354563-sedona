@@ -35,12 +35,13 @@
   background: $blue-color;
 }
 
-.social__link:hover {
-  background-color: #669ec0;
+.social__link:hover,
+.social__link:focus {
+  background: #669ec0;
 }
 
 .social__link:active {
-  background-color: #5496bd;
+  background: #5496bd;
 }
 
 .social__link--svg {
@@ -63,7 +64,7 @@
 
 .copyright__text {
   line-height: 24px;
-  margin-left: 13px;
+  margin-left: 3px;
 }
 
 .copyright__svg {
@@ -73,9 +74,16 @@
   padding-left: 3px;
 }
 
+.copyright__svg:hover {
+  fill: $blue-color;
+}
+
+.copyright__svg:active {
+  fill: #818181;
+}
+
 //Внутренние страницы
 .hashtag-inner {
-  //margin: 23px;
   margin: 0;
   padding-top: 23px;
 

@@ -72,18 +72,48 @@
   position: absolute;
   top: 22px;
   left: 25px;
+
+  fill: #5c6870;
+}
+
+.controls__replays:hover {
+  fill: #333333;
+}
+
+.controls__replays:active {
+  fill: #b8b8b8;
 }
 
 .controls__subtitles {
   position: absolute;
   top: 23px;
   right: 74px;
+
+  fill: #5c6870;
+}
+
+.controls__subtitles:hover {
+  fill: #333333;
+}
+
+.controls__subtitles:active {
+  fill: #b8b8b8;
 }
 
 .controls__fullscreen {
   position: absolute;
   top: 23px;
   right: 23px;
+
+  fill: #5c6870;
+}
+
+.controls__fullscreen:hover {
+  fill: #333333;
+}
+
+.controls__fullscreen:active {
+  fill: #b8b8b8;
 }
 
 //Стили для планшета
@@ -176,6 +206,14 @@
     fill: #ffffff;
   }
 
+  .controls__replays:hover {
+    fill: #c2c2c2;
+  }
+
+  .controls__replays:active {
+    fill: #949494;
+  }
+
   .controls__subtitles {
     position: absolute;
     top: 36px;
@@ -184,12 +222,28 @@
     fill: #ffffff;
   }
 
+  .controls__subtitles:hover {
+    fill: #c2c2c2;
+  }
+
+  .controls__subtitles:active {
+    fill: #949494;
+  }
+
   .controls__fullscreen {
     position: absolute;
     top: 36px;
     right: 41px;
 
     fill: #ffffff;
+  }
+
+  .controls__fullscreen:hover {
+    fill: #c2c2c2;
+  }
+
+  .controls__fullscreen:active {
+    fill: #7d7d7d;
   }
 }
 

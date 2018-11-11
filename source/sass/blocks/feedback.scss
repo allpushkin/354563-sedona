@@ -43,6 +43,7 @@
   justify-content: space-between;
   flex-grow: 1;
 
+  max-height: 78px;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +69,20 @@
   border: none;
 }
 
+.input-field:hover {
+  background-color: #e5e5e5;
+}
+
+.input-field:active {
+  background-color: #ffffff;
+
+  border: 4px solid #e5e5e5;
+}
+
+
 input[type="text"]::placeholder {
+  font-size: 18px;
+  line-height: 26px;
   color: #000000;
 }
 
@@ -81,18 +95,19 @@ input[type="text"]::placeholder {
   margin-bottom: 24px;
 }
 
-.feedback-form__contacts--text {
+.feedback-form__contacts-text {
   display: block;
   padding-left: 22px;
   margin-bottom: 10px;
 }
 
-.feedback-form__contacts--phone,
-.feedback-form__contacts--email {
+.feedback-form__contacts-phone,
+.feedback-form__contacts-email {
   margin-bottom: 15px;
   padding-top: 16px;
   padding-left: 21px;
   padding-bottom: 16px;
+  padding-right: 21px;
 
   font-size: 16px;
   line-height: 26px;
@@ -171,6 +186,14 @@ input[type="text"]::placeholder {
   border-radius: 50%;
 }
 
+.radio-indicator:hover {
+  background-color: #e5e5e5;
+}
+
+.radio-indicator:active {
+  background-color: #d5d5d5;
+}
+
 input[type="radio"]:checked + .radio-indicator::after {
   content: "";
   position: absolute;
@@ -182,6 +205,10 @@ input[type="radio"]:checked + .radio-indicator::after {
   background-color: #333333;
 
   border-radius: 50%;
+}
+
+input[type="radio"]:active + .radio-indicator::after {
+  background-color: #a4a4a4;
 }
 
 .feedback-form__impression::after {
@@ -197,14 +224,18 @@ input[type="radio"]:checked + .radio-indicator::after {
 
 .feedback-form__attraction {
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 45px;
 }
 
-.feedback-form__item--attraction {
-  position: relative;
-  margin-top: 32px;
-  margin-left: 78px;
-  margin-bottom: 54px;
+.feedback-form__attraction-list {
+  margin: 0;
+  padding: 0;
+}
+
+.feedback-form__attraction-item {
+  margin-top: 16px;
+  margin-bottom: 24px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -212,30 +243,34 @@ input[type="radio"]:checked + .radio-indicator::after {
   list-style: none;
 }
 
-.feedback-form__item--attraction:last-child {
-  margin-bottom: 60px;
-}
-
 .feedback-form__checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  max-width: 230px;
   cursor: pointer;
 }
 
 .checkbox-indicator {
-  position: absolute;
-  top: -15px;
-  left: -78px;
   width: 56px;
   height: 56px;
+  margin-right: 23px;
 
   background-color: $bg-form;
 
   border-radius: 10%;
 }
 
-input[type="checkbox"]:checked + .checkbox-indicator {
-  content: "";
-  position: absolute;
+.checkbox-indicator:hover {
+  background-color: #e5e5e5;
+}
 
+.checkbox-indicator:active {
+  background-color: #d5d5d5;
+}
+
+input[type="checkbox"]:checked + .checkbox-indicator {
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -244,7 +279,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 .feedback-form__attraction::after {
   position: absolute;
   content: "";
-  bottom: -41px;
+  bottom: -27px;
   left: -20px;
 
   width: 320px;
@@ -261,10 +296,11 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   height: 130px;
   margin-top: 0;
   margin-bottom: 45px;
-  padding: 15px 21px;
+  padding: 16px 21px;
 
   font-size: 18px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   color: #000000;
 
@@ -277,11 +313,10 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   margin: 0 auto;
   margin-bottom: 36px;
   padding: 0;
-  //padding-top: 15px;
-  //padding-left: 21px;
 
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -298,7 +333,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 @media (min-width: $tablet-width) {
   .feedback {
     width: auto;
-    //margin-bottom: 30px;
   }
 
   .feedback__wrapper {
@@ -313,27 +347,33 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2 {
+    width: 277px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    padding: 0;
+
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
   }
 
   .feedback-form__impression {
     order: 1;
 
     width: 50%;
-    height: 295px;
-    margin-bottom: 73px;
-    //border-right: 1px solid #f2f2f2;
+    min-height: 295px;
+    margin-bottom: 34px;
   }
 
   .feedback-form__heading-2--impression {
-    margin-bottom: 74px;
+    margin: 0;
+    margin-bottom: 50px;
 
     text-align: left;
   }
 
   .feedback-form__item {
-    //margin: 0;
     margin-bottom: 52px;
     margin-left: 77px;
   }
@@ -350,7 +390,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--fullname {
-    margin-bottom: 58px;
+    margin-bottom: 34px;
     margin-left: 58px;
 
     text-align: left;
@@ -380,27 +420,29 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     order: 3;
 
     width: 100%;
-    height: 250px;
-    margin-bottom: 58px;
+    min-height: 250px;
+    margin-bottom: 25px;
   }
 
   .feedback-form__heading-2--contacts {
-    margin-bottom: 27px;
+    width: 280px;
+    margin-bottom: 3px;
   }
 
-  .feedback-form__contacts--text {
+  .feedback-form__contacts-text {
     width: 627px;
     height: 21px;
     margin-bottom: 10px;
   }
 
-  .feedback-form__contacts--phone,
-  .feedback-form__contacts--email {
+  .feedback-form__contacts-phone,
+  .feedback-form__contacts-email {
     width: 627px;
     height: 20px;
     margin-bottom: 26px;
-    padding-top: 18px;
+    padding-top: 19px;
     padding-bottom: 19px;
+    padding-right: 0;
   }
 
   .feedback-form__button--phone {
@@ -423,31 +465,30 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     flex-wrap: wrap;
 
     width: 100%;
-    height: 235px;
-    margin-bottom: 71px;
+    min-height: 235px;
+    margin-bottom: 50px;
   }
 
-  .feedback-form__heading-2--attraction {
-    width: 277px;
-    height: 50px;
-    margin: 0 auto;
-    margin-bottom: 26px;
-
-    text-align: center;
-  }
-
-  .feedback-form__list--attraction {
+  .feedback-form__attraction-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    width: 456px;
-    margin: 0 auto;
+    max-width: 490px;
+    margin-left: 95px;
+    padding: 0;
   }
 
-  .feedback-form__item--attraction {
-    width: 122px;
-    margin-bottom: 30px;
+  .feedback-form__attraction-item {
+    width: 230px;
+    margin-top: 17px;
+    margin-right: 30px;
+    margin-bottom: 17px;
+  }
+
+  .feedback-form__attraction-item:nth-child(2n) {
+    margin-right: 0;
   }
 
   .feedback-form__attraction::after {
@@ -465,7 +506,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--emotions {
-    margin-bottom: 57px;
+    margin-bottom: 33px;
   }
 
   .feedback-form__textarea--emotions {
@@ -509,15 +550,15 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2 {
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     padding-left: 80px;
 
     text-align: left;
   }
 
   .feedback-form__impression {
-    height: 293px;
-    margin-bottom: 71px;
+    min-height: 293px;
+    margin-bottom: 32px;
   }
 
   .feedback-form__item {
@@ -529,7 +570,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--fullname {
-    margin-bottom: 56px;
+    margin-bottom: 32px;
     padding-left: 22px;
   }
 
@@ -537,7 +578,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     display: flex;
     justify-content: space-between;
 
-    //height: 78px;
     margin-left: 79px;
   }
 
@@ -549,14 +589,14 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     display: flex;
     flex-direction: column;
 
-    height: 155px;
-    margin-bottom: 56px;
+    min-height: 155px;
+    margin-bottom: 26px;
   }
 
   .feedback-form__heading-2--contacts {
     width: 500px;
     margin: 0 auto;
-    margin-bottom: 76px;
+    margin-bottom: 51px;
     padding: 0;
 
     text-align: center;
@@ -567,15 +607,16 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .feedback-form__contacts--text:first-child {
+  .feedback-form__contacts-text:first-child {
     width: 85px;
     margin-right: 0;
   }
 
-  .feedback-form__contacts--text {
+  .feedback-form__contacts-text {
     width: 150px;
     height: 21px;
     margin: 0;
@@ -584,14 +625,17 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     padding-top: 19px;
   }
 
-  .feedback-form__contacts--wrap {
+  .feedback-form__wrap {
     display: none;
   }
 
-  .feedback-form__contacts--phone {
+  .feedback-form__contacts-phone {
     width: 295px;
     height: 20px;
-    margin-right: 82px;
+    padding-top: 19px;
+    margin-right: 74px;
+    padding-bottom: 19px;
+    padding-right: 0;
   }
 
   .feedback-form__button--phone {
@@ -601,17 +645,9 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     left: 342px;
   }
 
-  .feedback-form__contacts--email {
+  .feedback-form__contacts-email {
     width: 295px;
     height: 20px;
-  }
-
-  .feedback-form__attraction {
-    display: flex;
-    flex-direction: column;
-
-    height: 197px;
-    margin-bottom: 20px;
   }
 
   .feedback-form__button--email {
@@ -621,20 +657,30 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     left: 902px;
   }
 
+  .feedback-form__attraction {
+    min-height: 193px;
+    margin-bottom: 23px;
+  }
+
   .feedback-form__heading-2--attraction {
-    margin: 0 auto;
-    margin-bottom: 29px;
+    margin-bottom: 0;
     padding: 0;
 
     text-align: center;
   }
 
-  .feedback-form__list--attraction {
+  .feedback-form__attraction-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    width: 954px;
+    min-width: 960px;
+    margin: 0;
+  }
+
+  .feedback-form__attraction-item {
+    width: auto;
+    margin-right: 0;
   }
 
   .feedback-form__emotions {
@@ -644,7 +690,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--emotions {
-    margin-bottom: 58px;
+    margin-bottom: 34px;
     padding: 0;
 
     text-align: center;
