@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div class="substrate">
@@ -214,6 +215,22 @@
           </form>
         </div>
       </section>
+      <div class="modal modal-failure modal-none">
+        <form class="modal-failure__form" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="modal-failure__heading-2 heading-2">Что-то пошло не так!</h2>
+          <p class="modal-failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal-failure__button button" type="submit">Ок</button>
+        </form>
+      </div>
+      <div class="modal modal-success modal-none">
+        <form class="modal-success__form" action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="modal-success__heading-2 heading-2">Ваш отзыв отправлен!</h2>
+          <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="modal-wrapper">
+            <button class="modal-success__button button" type="submit">Закрыть окно</button>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="page-footer container">
       <div class="page-footer__wrapper">

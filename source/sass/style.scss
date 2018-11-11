@@ -93,6 +93,7 @@ input[type="radio"].visually-hidden {
 @import "blocks/gallery.scss";
 @import "blocks/video.scss";
 @import "blocks/feedback.scss";
+@import "blocks/modal.scss";
 
 @media (min-width: $tablet-width) {
   .container {

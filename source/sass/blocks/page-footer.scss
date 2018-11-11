@@ -74,6 +74,14 @@
   padding-left: 3px;
 }
 
+.copyright__svg:hover {
+  fill: $blue-color;
+}
+
+.copyright__svg:active {
+  fill: #818181;
+}
+
 //Внутренние страницы
 .hashtag-inner {
   margin: 0;

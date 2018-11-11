@@ -1,0 +1,181 @@
+.modal-none {
+  display: none;
+}
+
+.modal {
+  position: relative;
+}
+
+.modal-failure__form {
+  position: absolute;
+  top: -754px;
+
+  width: 320px;
+  height: 280px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-failure__heading-2 {
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding-top: 42px;
+}
+
+.modal-failure__text {
+  max-width: 227px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  text-align: center;
+}
+
+.modal-failure__button {
+  display: block;
+  width: 180px;
+  height: 58px;
+  margin: 0 auto;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+
+  background-color: $blue-color;
+}
+
+.modal-success__form {
+  position: absolute;
+  top: -428px;
+
+  width: 320px;
+  height: 323px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.modal-success__heading-2 {
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding-top: 45px;
+}
+
+.modal-success__text {
+  max-width: 227px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+
+  text-align: center;
+}
+
+.modal-wrapper {
+  height: 96px;
+  background-color: $bg-form;
+  border: 1px solid $bg-form;
+}
+
+.modal-success__button {
+  display: block;
+  width: 180px;
+  height: 58px;
+  margin: 20px auto;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+
+  background-color: $blue-color;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .modal-failure__form {
+    position: absolute;
+    top: -568px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 400px;
+    height: 347px;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  .modal-failure__heading-2 {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 42px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal-failure__text {
+    max-width: 306px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    text-align: center;
+  }
+
+  .modal-failure__button {
+    display: block;
+    width: 272px;
+    height: 58px;
+    margin: 0 auto;
+  }
+
+  .modal-success__form {
+    position: absolute;
+    top: -728px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 640px;
+    height: 347px;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  .modal-success__heading-2 {
+    font-size: 30px;
+    line-height: 26px;
+
+    padding-top: 60px;
+  }
+
+  .modal-success__text {
+    max-width: 425px;
+    margin-bottom: 40px;
+  }
+
+  .modal-wrapper {
+    height: 146px;
+  }
+
+  .modal-success__button {
+    width: 458px;
+    margin: 44px auto;
+  }
+}
+
+//Стили для ПК
+@media (min-width: $tablet-width) {
+  .modal-failure__form {
+    position: absolute;
+    top: -460px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
