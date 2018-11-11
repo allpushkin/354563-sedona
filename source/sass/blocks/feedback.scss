@@ -73,7 +73,6 @@ input[type="text"]::placeholder {
   font-size: 18px;
   line-height: 26px;
   color: #000000;
-
 }
 
 .feedback-form__contacts {
@@ -202,7 +201,7 @@ input[type="radio"]:checked + .radio-indicator::after {
 
 .feedback-form__attraction {
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 45px;
 }
 
 .feedback-form__attraction-list {
@@ -211,10 +210,9 @@ input[type="radio"]:checked + .radio-indicator::after {
 }
 
 .feedback-form__attraction-item {
-  position: relative;
-  margin-top: 32px;
-  margin-left: 78px;
-  margin-bottom: 54px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -222,20 +220,19 @@ input[type="radio"]:checked + .radio-indicator::after {
   list-style: none;
 }
 
-.feedback-form__attraction-item:last-child {
-  margin-bottom: 60px;
-}
-
 .feedback-form__checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  max-width: 230px;
   cursor: pointer;
 }
 
 .checkbox-indicator {
-  position: absolute;
-  top: -15px;
-  left: -78px;
   width: 56px;
   height: 56px;
+  margin-right: 23px;
 
   background-color: $bg-form;
 
@@ -243,9 +240,6 @@ input[type="radio"]:checked + .radio-indicator::after {
 }
 
 input[type="checkbox"]:checked + .checkbox-indicator {
-  content: "";
-  position: absolute;
-
   background-image: url("../img/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -254,7 +248,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 .feedback-form__attraction::after {
   position: absolute;
   content: "";
-  bottom: -41px;
+  bottom: -27px;
   left: -20px;
 
   width: 320px;
@@ -271,10 +265,11 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   height: 130px;
   margin-top: 0;
   margin-bottom: 45px;
-  padding: 15px 21px;
+  padding: 16px 21px;
 
   font-size: 18px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   color: #000000;
 
@@ -288,8 +283,9 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   margin-bottom: 36px;
   padding: 0;
 
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -320,8 +316,15 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2 {
+    width: 277px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    padding: 0;
+
     font-size: 21px;
     line-height: 26px;
+    text-align: center;
   }
 
   .feedback-form__impression {
@@ -333,7 +336,8 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--impression {
-    margin-bottom: 74px;
+    margin: 0;
+    margin-bottom: 50px;
 
     text-align: left;
   }
@@ -355,7 +359,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--fullname {
-    margin-bottom: 58px;
+    margin-bottom: 34px;
     margin-left: 58px;
 
     text-align: left;
@@ -386,11 +390,12 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
     width: 100%;
     min-height: 250px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 
   .feedback-form__heading-2--contacts {
-    margin-bottom: 27px;
+    width: 280px;
+    margin-bottom: 3px;
   }
 
   .feedback-form__contacts-text {
@@ -430,31 +435,29 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
     width: 100%;
     min-height: 235px;
-    margin-bottom: 23px;
-  }
-
-  .feedback-form__heading-2 {
-    width: 277px;
-    height: 50px;
-    margin: 0 auto;
-    margin-bottom: 26px;
-
-    text-align: center;
+    margin-bottom: 50px;
   }
 
   .feedback-form__attraction-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    min-width: 470px;
-    margin: 0 auto;
+    max-width: 490px;
+    margin-left: 95px;
+    padding: 0;
   }
 
   .feedback-form__attraction-item {
-    min-width: 205px;
-    margin-bottom: 30px;
-    margin-left: 50px;;
+    width: 230px;
+    margin-top: 17px;
+    margin-right: 30px;
+    margin-bottom: 17px;
+  }
+
+  .feedback-form__attraction-item:nth-child(2n) {
+    margin-right: 0;
   }
 
   .feedback-form__attraction::after {
@@ -472,7 +475,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--emotions {
-    margin-bottom: 57px;
+    margin-bottom: 33px;
   }
 
   .feedback-form__textarea--emotions {
@@ -516,7 +519,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2 {
-    margin-bottom: 72px;
+    margin-bottom: 48px;
     padding-left: 80px;
 
     text-align: left;
@@ -536,7 +539,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--fullname {
-    margin-bottom: 56px;
+    margin-bottom: 32px;
     padding-left: 22px;
   }
 
@@ -544,7 +547,6 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     display: flex;
     justify-content: space-between;
 
-    //height: 78px;
     margin-left: 79px;
   }
 
@@ -557,13 +559,13 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     flex-direction: column;
 
     min-height: 155px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 
   .feedback-form__heading-2--contacts {
     width: 500px;
     margin: 0 auto;
-    margin-bottom: 76px;
+    margin-bottom: 51px;
     padding: 0;
 
     text-align: center;
@@ -599,9 +601,9 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   .feedback-form__contacts-phone {
     width: 295px;
     height: 20px;
-    padding-top: 20px;
+    padding-top: 19px;
     margin-right: 74px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
     padding-right: 0;
   }
 
@@ -626,11 +628,11 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
   .feedback-form__attraction {
     min-height: 193px;
+    margin-bottom: 23px;
   }
 
-  .feedback-form__heading-2 {
-    margin: 0 auto;
-    margin-bottom: 56px;
+  .feedback-form__heading-2--attraction {
+    margin-bottom: 0;
     padding: 0;
 
     text-align: center;
@@ -641,8 +643,13 @@ input[type="checkbox"]:checked + .checkbox-indicator {
     flex-direction: row;
     justify-content: space-between;
 
-    min-width: 954px;
+    min-width: 960px;
     margin: 0;
+  }
+
+  .feedback-form__attraction-item {
+    width: auto;
+    margin-right: 0;
   }
 
   .feedback-form__emotions {
@@ -652,7 +659,7 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   }
 
   .feedback-form__heading-2--emotions {
-    margin-bottom: 58px;
+    margin-bottom: 34px;
     padding: 0;
 
     text-align: center;
