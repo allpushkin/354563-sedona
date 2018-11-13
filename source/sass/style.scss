@@ -73,16 +73,9 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.container {
-  display: block;
-
-  width: 320px;
-  margin: 0 auto;
-  background: #ffffff;
-}
-
 @import "blocks/variables.scss";
 @import "blocks/mixins.scss";
+@import "blocks/container.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
