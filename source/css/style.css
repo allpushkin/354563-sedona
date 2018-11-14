@@ -50,6 +50,12 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.container {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+  background: #ffffff; }
+
 .button {
   margin: 0;
   padding: 0;
@@ -59,12 +65,6 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   text-transform: uppercase;
   border: none; }
-
-.container {
-  display: block;
-  width: 320px;
-  margin: 0 auto;
-  background: #ffffff; }
 
 .page-header {
   position: relative;
@@ -999,7 +999,7 @@ a {
   background-color: #669ec0; }
 
 .search__button:active {
-  color: #818181;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd; }
 
 .search__button:disabled {
