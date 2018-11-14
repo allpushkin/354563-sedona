@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.social__svg {
+  fill: #ffffff;
+}
+
 .social__list {
   display: flex;
   justify-content: center;
@@ -44,12 +48,8 @@
   background: #5496bd;
 }
 
-.social__svg {
-  fill: #ffffff;
-}
-
 .social__link:active .social__svg {
-  fill: #818181;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .copyright {
