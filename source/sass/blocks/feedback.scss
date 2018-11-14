@@ -323,7 +323,24 @@ input[type="checkbox"]:checked + .checkbox-indicator {
   text-transform: uppercase;
 
   background-color: $blue-color;
+
+  cursor: pointer;
 }
+
+.feedback-form__button--send:hover {
+  background-color: #669ec0;
+}
+
+.feedback-form__button:active {
+  color: #818181;
+
+  background-color: #5496bd;
+}
+
+.feedback-form__button:disabled {
+  background-color: #e5e5e5;
+}
+
 
 .feedback-form__footnote {
   display: none;
