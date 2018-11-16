@@ -11,7 +11,7 @@
   border: none;
 }
 
-.button__send {
+.button--send {
   display: block;
   width: 280px;
   margin: 0 auto;
@@ -30,23 +30,23 @@
   cursor: pointer;
 }
 
-.button__send:hover {
+.button--send:hover {
   background-color: #669ec0;
 }
 
-.button__send:active {
+.button--send:active {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
 }
 
-.button__send:disabled {
+.button--send:disabled {
   background-color: #e5e5e5;
 }
 
 //Стили для планшета
 @media (min-width: $tablet-width) {
-    .button__send {
+    .button--send {
       display: block;
       width: 324px;
       margin: 0;
@@ -55,7 +55,7 @@
 
   //Стили для экрана ПК
   @media (min-width: $desktop-width) {
-    .button__send {
+    .button--send {
       width: 480px;
       padding: 0;
       margin: 0;
