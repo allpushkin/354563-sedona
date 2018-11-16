@@ -46,18 +46,18 @@
 
 //Стили для планшета
 @media (min-width: $tablet-width) {
-    .button--send {
-      display: block;
-      width: 324px;
-      margin: 0;
-    }
+  .button--send {
+    display: block;
+    width: 324px;
+    margin: 0;
   }
+}
 
-  //Стили для экрана ПК
-  @media (min-width: $desktop-width) {
-    .button--send {
-      width: 480px;
-      padding: 0;
-      margin: 0;
-    }
+//Стили для экрана ПК
+@media (min-width: $desktop-width) {
+  .button--send {
+    width: 480px;
+    padding: 0;
+    margin: 0;
   }
+}
