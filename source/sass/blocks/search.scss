@@ -1,6 +1,6 @@
 .search {
   text-align: center;
-  margin-bottom: 64px;
+  margin: 0;
 }
 
 .search__wrapper {
@@ -21,13 +21,13 @@
 .search__text {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 36px;
 
   line-height: 24px;
 }
 
 .search__button {
-  display: -inline-block;
+  display: inline-block;
   margin-bottom: 48px;
   padding: 16px 46px;
   font-size: 21px;
@@ -43,13 +43,9 @@
 }
 
 .search__button:active {
-  color: #818181;
+  color: rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
-}
-
-.search__button:disabled {
-  background-color: #e5e5e5;
 }
 
 //Стили для планшета
@@ -57,7 +53,6 @@
   .search {
     witdh: auto;
     margin: 0 auto;
-    margin-bottom: 74px;
   }
 
   .search__wrapper {
@@ -74,7 +69,7 @@
 
   .search__text {
     width: 396px;
-    margin-bottom: 58px;
+    margin-bottom: 41px;
   }
 
   .search__button {
@@ -87,7 +82,6 @@
 @media (min-width: $desktop-width) {
   .search {
     margin: 0 auto;
-    margin-bottom: 82px;
   }
 
   .search__wrapper {
@@ -101,7 +95,7 @@
 
   .search__text {
     width: 396px;
-    margin-bottom: 64px;
+    margin-bottom: 47px;
   }
 
   .search__button {

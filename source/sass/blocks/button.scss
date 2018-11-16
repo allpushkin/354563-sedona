@@ -1,0 +1,63 @@
+.button {
+  margin: 0;
+  padding: 0;
+
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button--send {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: $blue-color;
+
+  cursor: pointer;
+}
+
+.button--send:hover {
+  background-color: #669ec0;
+}
+
+.button--send:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.button--send:disabled {
+  background-color: #e5e5e5;
+}
+
+//Стили для планшета
+@media (min-width: $tablet-width) {
+  .button--send {
+    display: block;
+    width: 324px;
+    margin: 0;
+  }
+}
+
+//Стили для экрана ПК
+@media (min-width: $desktop-width) {
+  .button--send {
+    width: 480px;
+    padding: 0;
+    margin: 0;
+  }
+}

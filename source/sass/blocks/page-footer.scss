@@ -4,12 +4,16 @@
 
 .hashtag {
   margin: 0;
-  padding-top: 36px;
+  padding-top: 22px;
 
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+}
+
+.social__svg {
+  fill: #ffffff;
 }
 
 .social__list {
@@ -44,12 +48,8 @@
   background: #5496bd;
 }
 
-.social__svg {
-  fill: #ffffff;
-}
-
 .social__link:active .social__svg {
-  fill: #818181;
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .copyright {
@@ -108,7 +108,8 @@
   }
 
   .hashtag {
-    margin-top: 9px;
+    margin-top: 46px;
+    padding: 0;
   }
 
   .social {
@@ -145,6 +146,7 @@
   .page-footer__copyright {
     width: 123px;
     margin: 0;
+    margin-top: 2px;
     padding: 0;
   }
 

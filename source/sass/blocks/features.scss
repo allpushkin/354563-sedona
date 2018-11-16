@@ -26,7 +26,9 @@
 }
 
 .features__main-intro {
-  height: 210px;
+  max-height: 210px;
+
+  overflow-y: auto;
 }
 
 .heading-3 {
@@ -120,7 +122,7 @@
 }
 
 .features__main-intro--bridge {
-  height: 191px;
+  overflow-y: auto;
 }
 
 .features__heading-3--bridge {
@@ -132,9 +134,11 @@
 .features__item--rest {
   position: relative;
 
-  height: 168px;
+  max-height: 168px;
   margin: 0;
   padding: 0;
+
+  overflow-y: auto;
 
   background-color: $bg-grey;
 }
@@ -193,7 +197,7 @@
     display: flex;
 
     width: 768px;
-    height: 256px;
+    max-height: 256px;
   }
 
   .features__main-intro {
@@ -206,7 +210,7 @@
   }
 
   .features__heading-3 {
-    width: 151px;
+    max-width: 151px;
     margin: 0 auto;
     margin-bottom: 10px;
     padding-top: 44px;
@@ -243,9 +247,11 @@
     position: relative;
 
     width: 256px;
-    height: 166px;
+    max-height: 166px;
     margin: 0;
     padding-top: 158px;
+
+    overflow-y: auto;
   }
 
   .advantage__item--suvenirs {
@@ -340,7 +346,7 @@
     display: flex;
 
     width: 256px;
-    height: 256px;
+    max-height: 256px;
     margin: 0;
     padding: 0;
   }
@@ -401,7 +407,7 @@
 
   .features__main-intro {
     width: 400px;
-    height: 256px;
+    max-height: 256px;
   }
 
   .features__heading-3 {
@@ -438,7 +444,7 @@
     position: relative;
 
     width: 400px;
-    height: 166px;
+    max-height: 166px;
   }
 
   .advantage__heading-3 {
@@ -510,9 +516,11 @@
     display: flex;
 
     width: 400px;
-    height: 256px;
+    max-height: 256px;
     margin: 0;
     padding: 0;
+
+    overflow-y: auto;
   }
 
   .features__item--wrap {
