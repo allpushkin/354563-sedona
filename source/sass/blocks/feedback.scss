@@ -73,7 +73,7 @@
   background-color: #e5e5e5;
 }
 
-.input-field:active {
+.input-field:focus {
   background-color: #ffffff;
 
   outline: 4px solid #e5e5e5;
@@ -541,6 +541,8 @@ input[type="checkbox"]:checked + .checkbox-indicator {
 
     background-color: $bg-form;
     border: none;
+
+    resize: none;
   }
 
   .feedback-form__button--send {
