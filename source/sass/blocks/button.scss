@@ -11,28 +11,6 @@
   border: none;
 }
 
-.search__button {
-  display: inline-block;
-  margin-bottom: 48px;
-  padding: 16px 46px;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ffffff;
-
-  background-color: $blue-color;
-}
-
-.search__button:hover {
-  background-color: #669ec0;
-}
-
-.search__button:active {
-  color: rgba(255, 255, 255, 0.3);
-
-  background-color: #5496bd;
-}
-
 .button__send {
   display: block;
   width: 280px;
@@ -68,11 +46,6 @@
 
 //Стили для планшета
 @media (min-width: $tablet-width) {
-  .search__button {
-    margin-bottom: 58px;
-    padding: 16px 135px;
-    }
-
     .button__send {
       display: block;
       width: 324px;
@@ -82,11 +55,6 @@
 
   //Стили для экрана ПК
   @media (min-width: $desktop-width) {
-    .search__button {
-      margin-bottom: 66px;
-      padding: 16px 135px;
-    }
-
     .button__send {
       width: 480px;
       padding: 0;

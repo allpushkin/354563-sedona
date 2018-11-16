@@ -27,6 +27,8 @@
 
 .features__main-intro {
   max-height: 210px;
+
+  overflow-y: auto;
 }
 
 .heading-3 {
@@ -121,6 +123,8 @@
 
 .features__main-intro--bridge {
   height: 191px;
+
+  overflow-y: auto;
 }
 
 .features__heading-3--bridge {
@@ -193,7 +197,7 @@
     display: flex;
 
     width: 768px;
-    height: 256px;
+    max-height: 256px;
   }
 
   .features__main-intro {
