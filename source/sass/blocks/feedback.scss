@@ -196,6 +196,11 @@ textarea::placeholder {
   background-color: #d5d5d5;
 }
 
+.feedback-form__radio input[type="radio"]:focus + .radio-indicator {
+  border: 2px solid $blue-color;
+  border-radius: 50%;
+}
+
 input[type="radio"]:checked + .radio-indicator::after {
   content: "";
   position: absolute;
@@ -270,6 +275,10 @@ input[type="radio"]:active + .radio-indicator::after {
 
 .checkbox-indicator:active {
   background-color: #d5d5d5;
+}
+
+.feedback-form__checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: 2px solid $blue-color;
 }
 
 input[type="checkbox"]:checked + .checkbox-indicator {
